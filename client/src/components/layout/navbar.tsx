@@ -2,12 +2,18 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Link, useLocation } from "wouter";
 import logoImage from "@assets/IMG-20231112-WA0033-1_1750675315071.jpg";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [location] = useLocation();
 
   const scrollToSection = (sectionId: string) => {
+    if (location !== '/') {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -19,34 +25,34 @@ export default function Navbar() {
     <nav className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
+          <Link href="/" className="flex items-center">
             <img 
               src={logoImage} 
               alt="Oyster Worldwide Employment & Learning Services" 
               className="h-12 w-auto"
             />
-          </div>
+          </Link>
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <button 
-                onClick={() => scrollToSection('home')}
-                className="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
+              <Link 
+                href="/"
+                className={`px-3 py-2 text-sm font-medium transition-colors ${location === '/' ? 'text-primary' : 'text-gray-600 hover:text-primary'}`}
               >
                 Home
-              </button>
+              </Link>
+              <Link 
+                href="/about"
+                className={`px-3 py-2 text-sm font-medium transition-colors ${location === '/about' ? 'text-primary' : 'text-gray-600 hover:text-primary'}`}
+              >
+                About
+              </Link>
               <button 
                 onClick={() => scrollToSection('services')}
                 className="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
               >
                 Services
-              </button>
-              <button 
-                onClick={() => scrollToSection('about')}
-                className="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
-              >
-                About
               </button>
               <button 
                 onClick={() => scrollToSection('testimonials')}
@@ -73,23 +79,25 @@ export default function Navbar() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex flex-col space-y-4 mt-8">
-                  <button 
-                    onClick={() => scrollToSection('home')}
-                    className="text-left text-gray-600 hover:text-primary px-3 py-2 text-lg font-medium transition-colors"
+                  <Link 
+                    href="/"
+                    onClick={() => setIsOpen(false)}
+                    className={`text-left px-3 py-2 text-lg font-medium transition-colors ${location === '/' ? 'text-primary' : 'text-gray-600 hover:text-primary'}`}
                   >
                     Home
-                  </button>
+                  </Link>
+                  <Link 
+                    href="/about"
+                    onClick={() => setIsOpen(false)}
+                    className={`text-left px-3 py-2 text-lg font-medium transition-colors ${location === '/about' ? 'text-primary' : 'text-gray-600 hover:text-primary'}`}
+                  >
+                    About
+                  </Link>
                   <button 
                     onClick={() => scrollToSection('services')}
                     className="text-left text-gray-600 hover:text-primary px-3 py-2 text-lg font-medium transition-colors"
                   >
                     Services
-                  </button>
-                  <button 
-                    onClick={() => scrollToSection('about')}
-                    className="text-left text-gray-600 hover:text-primary px-3 py-2 text-lg font-medium transition-colors"
-                  >
-                    About
                   </button>
                   <button 
                     onClick={() => scrollToSection('testimonials')}
