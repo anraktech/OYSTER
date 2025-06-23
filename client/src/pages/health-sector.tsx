@@ -2,29 +2,66 @@ import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Heart, Users, Globe, CheckCircle, BookOpen, Plane, Home, FileText, Award, Target } from "lucide-react";
+import { Heart, Users, Globe, CheckCircle, BookOpen, Plane, Home, FileText, Award, Target, ChevronDown, ChevronUp, HelpCircle } from "lucide-react";
+import { useState } from "react";
 
 const requirements = [
   {
     title: "OET (Occupational English Test)",
-    description: "Specifically designed for healthcare professionals seeking UK employment",
+    description: "English language proficiency exam designed specifically for medical professionals seeking UK opportunities",
+    fullDescription: "The OET is now officially recognized by the Nursing and Midwifery Council (NMC) as of November 1, 2017, and by the General Medical Council (GMC) as of February 6, 2018. This exam is tailored for healthcare professionals and reflects real workplace scenarios.",
     requirements: [
       "Grade B in Reading, Listening, and Speaking",
       "Grade C+ or higher in Writing",
-      "Recognized by NMC (Nov 1, 2017) and GMC (Feb 6, 2018)"
+      "Officially recognized by NMC and GMC",
+      "Designed specifically for healthcare contexts"
     ],
-    color: "bg-blue-50 border-blue-200"
+    color: "bg-blue-50 border-blue-200",
+    icon: "📋"
   },
   {
     title: "IELTS (International English Language Testing System)",
-    description: "Widely accepted English proficiency test for international healthcare professionals",
+    description: "One of the world's most widely used English language exams for higher education and international migration",
+    fullDescription: "IELTS Academic or General Training is the suggested exam for healthcare professionals wanting to relocate to the UK and work for UK-based healthcare providers like the NHS. Scores range from 1-9 for each section, with your total band score determined by the average.",
     requirements: [
       "Overall score of 7.0",
       "7.0 in Reading, Speaking, and Listening",
       "6.5 in Writing",
-      "Academic or General Training accepted"
+      "Full or half band scores available (e.g., 5.0, 5.5, 6.0, 6.5)"
     ],
-    color: "bg-green-50 border-green-200"
+    color: "bg-green-50 border-green-200",
+    icon: "🌍"
+  }
+];
+
+const faqData = [
+  {
+    question: "Do I need to be from an English-speaking country to work in UK healthcare?",
+    answer: "Not necessarily. For enrollment in UK Healthcare programs, you must either be from an English-speaking nation OR pass an approved English language exam like OET or IELTS. The language exam score requirements vary slightly based on the specific position you're seeking."
+  },
+  {
+    question: "What's the difference between OET and IELTS for healthcare professionals?",
+    answer: "OET is specifically designed for medical professionals and uses healthcare-related scenarios and vocabulary. IELTS is a general English proficiency test used worldwide. Both are accepted by UK healthcare regulatory bodies, so you can choose the one that best suits your preparation style."
+  },
+  {
+    question: "When were OET scores officially recognized in the UK?",
+    answer: "The Nursing and Midwifery Council (NMC) officially recognized OET on November 1, 2017, and the General Medical Council (GMC) recognized it on February 6, 2018. This recognition applies to nurses and doctors educated and trained worldwide."
+  },
+  {
+    question: "Can I choose between IELTS Academic and General Training?",
+    answer: "Yes, both IELTS Academic and General Training are accepted for UK healthcare employment. However, IELTS Academic is often preferred as it's specifically designed for academic and professional contexts."
+  },
+  {
+    question: "What if I don't meet the exact score requirements?",
+    answer: "Language requirements are set by regulatory bodies and employers for patient safety. If you don't meet the requirements initially, we can guide you to IELTS and OET preparation courses through our partner providers to help you achieve the necessary scores."
+  },
+  {
+    question: "How long are my OET/IELTS scores valid?",
+    answer: "Both OET and IELTS scores are typically valid for 2 years from the test date. However, some employers or regulatory bodies may have specific validity requirements, so it's best to check with the relevant authority."
+  },
+  {
+    question: "Do you provide reimbursement for exam fees?",
+    answer: "Yes! We offer reimbursement for IELTS/OET exam fees and NMC registration fees (including CBT & OSCE) for qualifying candidates. This is part of our comprehensive support package for healthcare professionals."
   }
 ];
 
@@ -50,6 +87,31 @@ const services = [
     description: "Assistance in finding suitable accommodation upon arrival"
   }
 ];
+
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="border border-gray-200 rounded-lg">
+      <button
+        className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span className="font-semibold text-gray-900">{question}</span>
+        {isOpen ? (
+          <ChevronUp className="h-5 w-5 text-gray-500" />
+        ) : (
+          <ChevronDown className="h-5 w-5 text-gray-500" />
+        )}
+      </button>
+      {isOpen && (
+        <div className="px-6 pb-4">
+          <p className="text-gray-600">{answer}</p>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function HealthSector() {
   const scrollToContact = () => {
@@ -192,8 +254,12 @@ export default function HealthSector() {
               {requirements.map((req, index) => (
                 <Card key={index} className={`border-2 ${req.color}`}>
                   <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">{req.title}</h3>
-                    <p className="text-gray-600 mb-6">{req.description}</p>
+                    <div className="flex items-center mb-4">
+                      <span className="text-3xl mr-3">{req.icon}</span>
+                      <h3 className="text-2xl font-bold text-gray-900">{req.title}</h3>
+                    </div>
+                    <p className="text-gray-600 mb-4">{req.description}</p>
+                    <p className="text-gray-700 mb-6 text-sm">{req.fullDescription}</p>
                     <div className="space-y-3">
                       {req.requirements.map((requirement, reqIndex) => (
                         <div key={reqIndex} className="flex items-start">
@@ -207,10 +273,53 @@ export default function HealthSector() {
               ))}
             </div>
 
-            <div className="mt-8 text-center">
-              <p className="text-gray-600 mb-4">
-                For the latest updates regarding NMC UK & GMC UK requirements, please check their official websites.
+            <div className="mt-8 p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded-lg">
+              <div className="flex items-start">
+                <HelpCircle className="h-6 w-6 text-yellow-600 mr-3 mt-0.5" />
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Important Note</h4>
+                  <p className="text-gray-700">
+                    Language exam score requirements may vary slightly based on the specific position you're seeking. 
+                    For the latest updates regarding NMC UK & GMC UK requirements, please check their official websites 
+                    or contact us for personalized guidance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+              <p className="text-xl text-gray-600">
+                Common questions about English language requirements for UK healthcare professionals
               </p>
+            </div>
+
+            <div className="space-y-4">
+              {faqData.map((faq, index) => (
+                <FAQItem key={index} question={faq.question} answer={faq.answer} />
+              ))}
+            </div>
+
+            <div className="mt-12 text-center">
+              <Card className="bg-primary/10 border-primary/20">
+                <CardContent className="p-8">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Still Have Questions?</h3>
+                  <p className="text-gray-700 mb-6">
+                    Our experienced team is here to provide personalized guidance for your specific situation.
+                  </p>
+                  <Button 
+                    onClick={scrollToContact}
+                    className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                  >
+                    Contact Our Experts
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
