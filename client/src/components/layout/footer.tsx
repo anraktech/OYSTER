@@ -40,8 +40,8 @@ export default function Footer() {
             <ul className="space-y-3">
               <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
               <li><a href="/#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">News</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+              <li><a href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><a href="/terms-conditions" className="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
             </ul>
           </div>
         </div>
@@ -49,8 +49,9 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
             &copy; 2024 Oyster Employment. All rights reserved. | 
-            <a href="#" className="hover:text-white transition-colors ml-1">Privacy Policy</a> | 
-            <a href="#" className="hover:text-white transition-colors ml-1">Terms of Service</a>
+            <a href="/privacy-policy" className="hover:text-white transition-colors ml-1">Privacy Policy</a> | 
+            <a href="/terms-conditions" className="hover:text-white transition-colors ml-1">Terms & Conditions</a> | 
+            <a href="/cookie-policy" className="hover:text-white transition-colors ml-1">Cookie Policy</a>
           </p>
         </div>
       </div>
