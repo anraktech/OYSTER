@@ -88,8 +88,8 @@ export default function Engineering() {
             <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
               <div className="mb-12 lg:mb-0">
                 <img 
-                  src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                  alt="Engineers working on cutting-edge technology" 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                  alt="Engineers working with technical blueprints and plans" 
                   className="rounded-2xl shadow-xl w-full"
                 />
               </div>
