@@ -1,5 +1,4 @@
 import { Facebook, Twitter, Linkedin } from "lucide-react";
-import logoImage from "@assets/IMG-20231112-WA0033-1_1750675315071.jpg";
 
 export default function Footer() {
   return (
@@ -7,12 +6,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center mb-6">
-              <img 
-                src={logoImage} 
-                alt="Oyster Worldwide Employment & Learning Services" 
-                className="h-12 w-auto"
-              />
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold">Oyster Employment</h3>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               Creating opportunities and unlocking success in specialized fields. Your trusted partner for career growth and talent acquisition.
