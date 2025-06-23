@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Linkedin } from "lucide-react";
+import logoImage from "@assets/IMG-20231112-WA0033-1_1750675315071.jpg";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-6">
               <img 
-                src="/attached_assets/IMG-20231112-WA0033-1_1750675315071.jpg" 
+                src={logoImage} 
                 alt="Oyster Worldwide Employment & Learning Services" 
                 className="h-12 w-auto"
               />

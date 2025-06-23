@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import logoImage from "@assets/IMG-20231112-WA0033-1_1750675315071.jpg";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <img 
-              src="/attached_assets/IMG-20231112-WA0033-1_1750675315071.jpg" 
+              src={logoImage} 
               alt="Oyster Worldwide Employment & Learning Services" 
               className="h-12 w-auto"
             />
