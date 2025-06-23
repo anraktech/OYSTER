@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <img 
-              src="@assets/IMG-20231112-WA0033-1_1750675315071.jpg" 
+              src="/attached_assets/IMG-20231112-WA0033-1_1750675315071.jpg" 
               alt="Oyster Worldwide Employment & Learning Services" 
               className="h-12 w-auto"
             />
