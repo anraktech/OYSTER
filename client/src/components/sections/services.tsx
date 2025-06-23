@@ -17,21 +17,24 @@ const services = [
     title: "Engineering",
     description: "Placing skilled engineers in cutting-edge projects across various engineering disciplines.",
     color: "text-blue-600",
-    bgColor: "bg-blue-100"
+    bgColor: "bg-blue-100",
+    link: "/engineering"
   },
   {
     icon: Laptop,
     title: "Information Technology",
     description: "Matching IT professionals with innovative tech companies and digital transformation projects.",
     color: "text-green-600",
-    bgColor: "bg-green-100"
+    bgColor: "bg-green-100",
+    link: "/information-technology"
   },
   {
     icon: Coffee,
     title: "Hospitality",
     description: "Connecting hospitality professionals with premier hotels, restaurants, and tourism companies.",
     color: "text-yellow-600",
-    bgColor: "bg-yellow-100"
+    bgColor: "bg-yellow-100",
+    link: "/hospitality"
   }
 ];
 

@@ -29,9 +29,9 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6">Services</h3>
             <ul className="space-y-3">
               <li><a href="/health-sector" className="text-gray-400 hover:text-white transition-colors">Health Sector</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Engineering</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Information Technology</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Hospitality</a></li>
+              <li><a href="/engineering" className="text-gray-400 hover:text-white transition-colors">Engineering</a></li>
+              <li><a href="/information-technology" className="text-gray-400 hover:text-white transition-colors">Information Technology</a></li>
+              <li><a href="/hospitality" className="text-gray-400 hover:text-white transition-colors">Hospitality</a></li>
             </ul>
           </div>
 
