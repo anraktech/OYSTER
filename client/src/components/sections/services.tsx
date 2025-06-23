@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Heart, Cog, Laptop, Coffee, ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 
 const services = [
   {
@@ -8,7 +9,8 @@ const services = [
     title: "Health Sector",
     description: "Connecting healthcare professionals with leading medical institutions and healthcare organizations.",
     color: "text-red-600",
-    bgColor: "bg-red-100"
+    bgColor: "bg-red-100",
+    link: "/health-sector"
   },
   {
     icon: Cog,
@@ -55,12 +57,23 @@ export default function Services() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">{service.title}</h3>
                   <p className="text-gray-600 mb-6">{service.description}</p>
-                  <Button 
-                    variant="ghost" 
-                    className="text-primary font-semibold hover:text-blue-700 transition-colors p-0"
-                  >
-                    Learn More <ArrowRight className="ml-1 h-4 w-4" />
-                  </Button>
+                  {service.link ? (
+                    <Link href={service.link}>
+                      <Button 
+                        variant="ghost" 
+                        className="text-primary font-semibold hover:text-blue-700 transition-colors p-0"
+                      >
+                        Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                      </Button>
+                    </Link>
+                  ) : (
+                    <Button 
+                      variant="ghost" 
+                      className="text-primary font-semibold hover:text-blue-700 transition-colors p-0"
+                    >
+                      Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             );

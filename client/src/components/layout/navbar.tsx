@@ -48,6 +48,12 @@ export default function Navbar() {
               >
                 About
               </Link>
+              <Link 
+                href="/health-sector"
+                className={`px-3 py-2 text-sm font-medium transition-colors ${location === '/health-sector' ? 'text-primary' : 'text-gray-600 hover:text-primary'}`}
+              >
+                Health Sector
+              </Link>
               <button 
                 onClick={() => scrollToSection('services')}
                 className="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
@@ -92,6 +98,13 @@ export default function Navbar() {
                     className={`text-left px-3 py-2 text-lg font-medium transition-colors ${location === '/about' ? 'text-primary' : 'text-gray-600 hover:text-primary'}`}
                   >
                     About
+                  </Link>
+                  <Link 
+                    href="/health-sector"
+                    onClick={() => setIsOpen(false)}
+                    className={`text-left px-3 py-2 text-lg font-medium transition-colors ${location === '/health-sector' ? 'text-primary' : 'text-gray-600 hover:text-primary'}`}
+                  >
+                    Health Sector
                   </Link>
                   <button 
                     onClick={() => scrollToSection('services')}
