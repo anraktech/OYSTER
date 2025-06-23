@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Link, useLocation } from "wouter";
 import logoImage from "@assets/IMG-20231112-WA0033-1_1750675315071.jpg";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [location] = useLocation();
 
   const scrollToSection = (sectionId: string) => {
@@ -20,6 +21,13 @@ export default function Navbar() {
     }
     setIsOpen(false);
   };
+
+  const services = [
+    { name: "Health Sector", href: "/health-sector" },
+    { name: "Engineering", href: "/engineering" },
+    { name: "Information Technology", href: "/information-technology" },
+    { name: "Hospitality", href: "/hospitality" },
+  ];
 
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
@@ -48,18 +56,29 @@ export default function Navbar() {
               >
                 About
               </Link>
-              <Link 
-                href="/health-sector"
-                className={`px-3 py-2 text-sm font-medium transition-colors ${location === '/health-sector' ? 'text-primary' : 'text-gray-600 hover:text-primary'}`}
-              >
-                Health Sector
-              </Link>
-              <button 
-                onClick={() => scrollToSection('services')}
-                className="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
-              >
-                Services
-              </button>
+              <div className="relative">
+                <button 
+                  onClick={() => setIsServicesOpen(!isServicesOpen)}
+                  className="flex items-center text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
+                >
+                  Services
+                  <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {isServicesOpen && (
+                  <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                    {services.map((service) => (
+                      <Link 
+                        key={service.href}
+                        href={service.href}
+                        onClick={() => setIsServicesOpen(false)}
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors"
+                      >
+                        {service.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
               <button 
                 onClick={() => scrollToSection('testimonials')}
                 className="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
@@ -99,19 +118,21 @@ export default function Navbar() {
                   >
                     About
                   </Link>
-                  <Link 
-                    href="/health-sector"
-                    onClick={() => setIsOpen(false)}
-                    className={`text-left px-3 py-2 text-lg font-medium transition-colors ${location === '/health-sector' ? 'text-primary' : 'text-gray-600 hover:text-primary'}`}
-                  >
-                    Health Sector
-                  </Link>
-                  <button 
-                    onClick={() => scrollToSection('services')}
-                    className="text-left text-gray-600 hover:text-primary px-3 py-2 text-lg font-medium transition-colors"
-                  >
-                    Services
-                  </button>
+                  <div className="px-3 py-2">
+                    <div className="text-lg font-medium text-gray-800 mb-2">Services</div>
+                    <div className="pl-4 space-y-2">
+                      {services.map((service) => (
+                        <Link 
+                          key={service.href}
+                          href={service.href}
+                          onClick={() => setIsOpen(false)}
+                          className="block text-gray-600 hover:text-primary transition-colors"
+                        >
+                          {service.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                   <button 
                     onClick={() => scrollToSection('testimonials')}
                     className="text-left text-gray-600 hover:text-primary px-3 py-2 text-lg font-medium transition-colors"
@@ -129,6 +150,13 @@ export default function Navbar() {
             </Sheet>
           </div>
         </div>
+        {/* Overlay to close dropdown */}
+        {isServicesOpen && (
+          <div 
+            className="fixed inset-0 z-40"
+            onClick={() => setIsServicesOpen(false)}
+          />
+        )}
       </div>
     </nav>
   );
