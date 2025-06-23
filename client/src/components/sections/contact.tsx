@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { MapPin, Phone, Mail, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Send, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
@@ -102,7 +102,11 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <div className="font-semibold text-gray-900">Address</div>
-                  <div className="text-gray-600">Skelmersdale, Northwest England</div>
+                  <div className="text-gray-600">
+                    Certacs House, 10-12 Westgate<br/>
+                    Skelmersdale, Lancashire<br/>
+                    WN8 8AZ
+                  </div>
                 </div>
               </div>
 
@@ -112,7 +116,7 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <div className="font-semibold text-gray-900">Phone</div>
-                  <div className="text-gray-600">+44 (0) 123 456 7890</div>
+                  <div className="text-gray-600">+44(0)1695 363923</div>
                 </div>
               </div>
 
@@ -123,6 +127,15 @@ export default function Contact() {
                 <div className="ml-4">
                   <div className="font-semibold text-gray-900">Email</div>
                   <div className="text-gray-600">info@oysteremployment.com</div>
+                </div>
+              </div>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                  <Clock className="h-6 w-6 text-white" />
+                </div>
+                <div className="ml-4">
+                  <div className="font-semibold text-gray-900">Opening Hours</div>
+                  <div className="text-gray-600">Monday - Friday (9am - 6pm)</div>
                 </div>
               </div>
             </div>

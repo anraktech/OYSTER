@@ -12,6 +12,7 @@ import InformationTechnology from "@/pages/information-technology";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import TermsConditions from "@/pages/terms-conditions";
 import CookiePolicy from "@/pages/cookie-policy";
+import News from "@/pages/news";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -26,6 +27,7 @@ function Router() {
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms-conditions" component={TermsConditions} />
       <Route path="/cookie-policy" component={CookiePolicy} />
+      <Route path="/news" component={News} />
       <Route component={NotFound} />
     </Switch>
   );
