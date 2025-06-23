@@ -9,6 +9,9 @@ import HealthSector from "@/pages/health-sector";
 import Engineering from "@/pages/engineering";
 import Hospitality from "@/pages/hospitality";
 import InformationTechnology from "@/pages/information-technology";
+import PrivacyPolicy from "@/pages/privacy-policy";
+import TermsConditions from "@/pages/terms-conditions";
+import CookiePolicy from "@/pages/cookie-policy";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -20,6 +23,9 @@ function Router() {
       <Route path="/engineering" component={Engineering} />
       <Route path="/hospitality" component={Hospitality} />
       <Route path="/information-technology" component={InformationTechnology} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/terms-conditions" component={TermsConditions} />
+      <Route path="/cookie-policy" component={CookiePolicy} />
       <Route component={NotFound} />
     </Switch>
   );
