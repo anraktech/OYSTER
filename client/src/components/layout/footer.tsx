@@ -8,11 +8,10 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-6">
               <img 
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=60" 
-                alt="Oyster Employment Logo" 
-                className="h-10 w-auto"
+                src="@assets/IMG-20231112-WA0033-1_1750675315071.jpg" 
+                alt="Oyster Worldwide Employment & Learning Services" 
+                className="h-12 w-auto"
               />
-              <span className="ml-3 text-xl font-bold">Oyster Employment</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               Creating opportunities and unlocking success in specialized fields. Your trusted partner for career growth and talent acquisition.

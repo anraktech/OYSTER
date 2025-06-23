@@ -43,6 +43,9 @@ export class MemStorage implements IStorage {
     const contact: Contact = { 
       ...insertContact, 
       id,
+      phone: insertContact.phone ?? null,
+      sector: insertContact.sector ?? null,
+      agreeToTerms: insertContact.agreeToTerms ?? false,
       createdAt: new Date()
     };
     this.contacts.set(id, contact);

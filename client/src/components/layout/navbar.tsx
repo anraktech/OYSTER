@@ -20,11 +20,10 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <img 
-              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=60" 
-              alt="Oyster Employment Logo" 
-              className="h-10 w-auto"
+              src="@assets/IMG-20231112-WA0033-1_1750675315071.jpg" 
+              alt="Oyster Worldwide Employment & Learning Services" 
+              className="h-12 w-auto"
             />
-            <span className="ml-3 text-xl font-bold text-primary">Oyster Employment</span>
           </div>
           
           {/* Desktop Navigation */}
