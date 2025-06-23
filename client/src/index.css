@@ -85,6 +85,29 @@
   .animate-pulse-slow {
     animation: pulse 3s infinite;
   }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: -2s;
+  }
+  
+  .animate-float-slow {
+    animation: float 8s ease-in-out infinite;
+    animation-delay: -4s;
+  }
+  
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+  
+  .animate-pulse-delayed {
+    animation: pulse 3s infinite;
+    animation-delay: -1.5s;
+  }
 }
 
 @keyframes fadeIn {
@@ -95,6 +118,17 @@
 @keyframes slideUp {
   from { transform: translateY(30px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.6;
+  }
+  50% { 
+    transform: translateY(-20px) rotate(180deg);
+    opacity: 1;
+  }
 }
 
 html {
