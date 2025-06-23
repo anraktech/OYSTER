@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Nidhi Ghodele",
     role: "Web Developer & IT Assistant",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b932?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
+    image: "https://oysteremployment.com/wp-content/uploads/2024/02/website.jpeg",
     content: "Excellent recruitment agency to land your dream job. I would absolutely recommend it. Plus they provide learning resources as well!"
   },
   {
