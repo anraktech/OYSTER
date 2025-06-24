@@ -100,6 +100,12 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - **Migrations**: Manual migration push using `npm run db:push`
 - **Schema**: Located in `shared/schema.ts` for type sharing
 
+## Recent Changes
+
+- June 23, 2025: Enhanced hero section with animated background effects including floating shapes, gradient orbs, and smooth animations
+- June 23, 2025: Updated engineering page "Recognizing Engineering Value" section with improved modern workspace image
+- June 23, 2025: Verified contact form navigation works correctly across all pages using /#contact redirect
+
 ## Changelog
 
 - June 23, 2025. Initial setup
