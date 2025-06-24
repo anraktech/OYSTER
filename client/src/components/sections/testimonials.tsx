@@ -28,7 +28,7 @@ const testimonials = [
     name: "Priya Sharma",
     role: "Software Developer",
     nationality: "Indian",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
     content: "Being from India, I was worried about the visa process and finding a good IT role in the UK. Oyster Employment handled everything professionally and found me a perfect position that matches my skills and career goals."
   },
   {

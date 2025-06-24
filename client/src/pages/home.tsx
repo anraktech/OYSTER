@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import Hero from "@/components/sections/hero";
+import WorkTogether from "@/components/sections/work-together";
 import Services from "@/components/sections/services";
 import About from "@/components/sections/about";
 import RecruitmentStandards from "@/components/sections/recruitment-standards";
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <WorkTogether />
         <Services />
         <About />
         <RecruitmentStandards />
