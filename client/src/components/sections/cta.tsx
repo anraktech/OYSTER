@@ -13,7 +13,7 @@ export default function CTA() {
     <section className="py-20 gradient-bg text-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl font-bold mb-6">Ready to work together?</h2>
-        <p className="text-xl text-blue-100 mb-8">Join thousands of professionals who have found their dream jobs through Oyster Employment</p>
+        <p className="text-xl text-blue-100 mb-8">Join professionals who have found their dream jobs through Oyster Employment</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
             onClick={scrollToContact}
