@@ -105,6 +105,15 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - June 23, 2025: Enhanced hero section with animated background effects including floating shapes, gradient orbs, and smooth animations
 - June 23, 2025: Updated engineering page "Recognizing Engineering Value" section with improved modern workspace image
 - June 23, 2025: Verified contact form navigation works correctly across all pages using /#contact redirect
+- June 23, 2025: Increased logo size from h-12 to h-16 in navbar
+- June 23, 2025: Reordered services to put Information Technology before Engineering in both navbar dropdown and services section
+- June 23, 2025: Updated "What We Provide" section - changed "UK Airport Welcome Service" to "Airport Welcome" and updated description
+- June 23, 2025: Changed "Professional support" to "Assistance" in Accommodation Assistance section
+- June 23, 2025: Updated "Our Commitment as an Employment Agency" to "Our Commitment as an Employment Company"
+- June 23, 2025: Removed "500+ Successful Placements" and "50+ Partner Companies" from stats, keeping only "4 Specialized Sectors" and "98% Client Satisfaction"
+- June 23, 2025: Replaced Sarah Johnson testimonial with two Filipino registered nurse testimonials (Maria Santos and Rosa Dela Cruz)
+- June 23, 2025: Changed CTA button text from "Hire Through Us" to "Partner With Us"
+- June 23, 2025: Verified testimonials navigation works correctly from all pages to home page testimonials section
 
 ## Changelog
 
