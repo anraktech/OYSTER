@@ -9,10 +9,16 @@ const testimonials = [
     content: "Excellent recruitment agency to land your dream job. I would absolutely recommend it. Plus they provide learning resources as well!"
   },
   {
-    name: "Sarah Johnson",
+    name: "Maria Santos",
+    role: "Registered Nurse",
+    image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
+    content: "Coming from the Philippines as a nurse, Oyster Employment made my UK journey seamless. Their support from visa assistance to finding the perfect hospital placement was exceptional. I'm now working in my dream role!"
+  },
+  {
+    name: "Rosa Dela Cruz",
     role: "Registered Nurse",
     image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
-    content: "The support I received throughout the process was exceptional. From interview preparation to visa assistance, they were with me every step."
+    content: "As a Filipino nurse, I was nervous about working in the UK. Oyster Employment guided me through everything - from exam preparation to airport welcome. They truly care about their candidates' success. Highly recommended!"
   },
   {
     name: "Michael Chen",

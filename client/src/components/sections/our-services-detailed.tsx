@@ -11,15 +11,15 @@ const services = [
   },
   {
     icon: Plane,
-    title: "UK Airport Welcome Service",
-    description: "Personal meet-and-greet service at UK airports to ensure a smooth transition and welcome to your new career destination.",
+    title: "Airport Welcome",
+    description: "Meet-and-greet at UK airports to ensure a smooth transition and welcome to your new career destination.",
     color: "text-green-600",
     bgColor: "bg-green-100"
   },
   {
     icon: Home,
     title: "Accommodation Assistance",
-    description: "Professional support in finding and securing suitable accommodation upon your arrival, making your transition seamless.",
+    description: "Assistance in finding and securing suitable accommodation upon your arrival, making your transition seamless.",
     color: "text-purple-600",
     bgColor: "bg-purple-100"
   }

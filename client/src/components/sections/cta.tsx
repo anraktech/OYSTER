@@ -28,7 +28,7 @@ export default function CTA() {
             className="border-2 border-white bg-transparent text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-primary transition-all"
           >
             <Handshake className="mr-2 h-5 w-5" />
-            Hire Through Us
+            Partner With Us
           </Button>
         </div>
       </div>

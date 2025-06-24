@@ -24,8 +24,8 @@ export default function Navbar() {
 
   const services = [
     { name: "Health Sector", href: "/health-sector" },
-    { name: "Engineering", href: "/engineering" },
     { name: "Information Technology", href: "/information-technology" },
+    { name: "Engineering", href: "/engineering" },
     { name: "Hospitality", href: "/hospitality" },
   ];
 
