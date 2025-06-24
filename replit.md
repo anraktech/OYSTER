@@ -118,6 +118,8 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - June 24, 2025: Enhanced testimonials with carousel functionality and added diverse testimonials from Indian and Nigerian professionals
 - June 24, 2025: Redesigned stats section with larger fonts, icons, and improved visual appeal
 - June 24, 2025: Fixed Priya Sharma testimonial photo and removed tagline explanation from Work Together section
+- June 24, 2025: Added tagline explanation to About page Work Together section only
+- June 24, 2025: Updated hospitality page hero image to elegant hotel reception desk with service bell
 
 ## Changelog
 

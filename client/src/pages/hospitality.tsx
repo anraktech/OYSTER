@@ -73,8 +73,8 @@ export default function Hospitality() {
               </div>
               <div className="mt-12 lg:mt-0">
                 <img 
-                  src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                  alt="Professional hotel reception desk with receptionist providing customer service" 
+                  src="@assets/pexels-andrea-piacquadio-3771110-scaled_1750797941212.jpg" 
+                  alt="Elegant hotel reception desk with service bell and reception sign" 
                   className="rounded-2xl shadow-2xl w-full"
                 />
               </div>
