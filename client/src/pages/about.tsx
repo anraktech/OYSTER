@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Heart, Star, Users, Globe } from "lucide-react";
+import WorkTogether from "@/components/sections/work-together";
 
 const values = [
   {
@@ -39,15 +40,7 @@ export default function About() {
     <div className="min-h-screen">
       <Navbar />
       <main>
-        {/* Hero Section */}
-        <section className="gradient-bg text-white py-20">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl font-bold mb-6">Work Together, Grow Together</h1>
-            <p className="text-xl text-blue-100 mb-8">
-              Our company tagline reflects our core philosophy - building partnerships that foster mutual success and sustainable growth.
-            </p>
-          </div>
-        </section>
+        <WorkTogether />
 
         {/* Our Story */}
         <section className="py-20 bg-white">
