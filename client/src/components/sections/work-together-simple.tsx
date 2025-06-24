@@ -20,7 +20,7 @@ export default function WorkTogetherSimple() {
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-primary to-blue-600 rounded-full mb-8">
             <Heart className="h-10 w-10 text-white" />
           </div>
-          <h2 className="text-5xl lg:text-6xl font-bold text-gray-900">
+          <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
               Work Together
             </span>
@@ -29,6 +29,9 @@ export default function WorkTogetherSimple() {
               Grow Together
             </span>
           </h2>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            Our company tagline reflects our core philosophy - building partnerships that foster mutual success and sustainable growth. We believe that when we work together with dedication and trust, we all grow together towards achieving greater heights.
+          </p>
         </div>
       </div>
     </section>

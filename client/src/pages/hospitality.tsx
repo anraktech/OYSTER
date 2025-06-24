@@ -73,8 +73,8 @@ export default function Hospitality() {
               </div>
               <div className="mt-12 lg:mt-0">
                 <img 
-                  src="https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                  alt="Professional hospitality team providing excellent service" 
+                  src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                  alt="Professional hotel reception desk with receptionist providing customer service" 
                   className="rounded-2xl shadow-2xl w-full"
                 />
               </div>
@@ -88,8 +88,8 @@ export default function Hospitality() {
             <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
               <div className="mb-12 lg:mb-0">
                 <img 
-                  src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                  alt="Elegant restaurant setting showcasing hospitality excellence" 
+                  src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                  alt="Professional butler providing exceptional personalized service" 
                   className="rounded-2xl shadow-xl w-full"
                 />
               </div>
