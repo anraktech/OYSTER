@@ -73,7 +73,7 @@ export default function Hospitality() {
               </div>
               <div className="mt-12 lg:mt-0">
                 <img 
-                  src="@assets/pexels-andrea-piacquadio-3771110-scaled_1750797941212.jpg" 
+                  src="/attached_assets/pexels-andrea-piacquadio-3771110-scaled_1750797941212.jpg" 
                   alt="Elegant hotel reception desk with service bell and reception sign" 
                   className="rounded-2xl shadow-2xl w-full"
                 />
@@ -88,8 +88,8 @@ export default function Hospitality() {
             <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
               <div className="mb-12 lg:mb-0">
                 <img 
-                  src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                  alt="Professional butler providing exceptional personalized service" 
+                  src="/attached_assets/pexels-cottonbro-6466289_1750798074680.jpg" 
+                  alt="Professional hospitality service with elegant room service setup" 
                   className="rounded-2xl shadow-xl w-full"
                 />
               </div>
