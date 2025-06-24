@@ -2,7 +2,7 @@ import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Heart, Star, Users, Globe } from "lucide-react";
-import WorkTogether from "@/components/sections/work-together";
+import WorkTogetherSimple from "@/components/sections/work-together-simple";
 
 const values = [
   {
@@ -40,7 +40,7 @@ export default function About() {
     <div className="min-h-screen">
       <Navbar />
       <main>
-        <WorkTogether />
+        <WorkTogetherSimple />
 
         {/* Our Story */}
         <section className="py-20 bg-white">
