@@ -136,6 +136,9 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - June 27, 2025: Changed Jennifer to Saba
 - June 27, 2025: Removed "Registered" from all nurse roles, keeping just "Nurse"
 - June 27, 2025: Reshuffled testimonials order to create better variety across roles and nationalities
+- June 27, 2025: Changed CTA button from "Partner With Us" to "Work With Us" (keeping handshake icon)
+- June 27, 2025: Added Google Maps directions link to contact address
+- June 27, 2025: Added second mobile number +44(0) 7459346514 to contact section
 
 ## Changelog
 

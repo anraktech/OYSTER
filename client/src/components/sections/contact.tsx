@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { MapPin, Phone, Mail, Send, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Send, Clock, Navigation } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
@@ -107,6 +107,15 @@ export default function Contact() {
                     Skelmersdale, Lancashire<br/>
                     WN8 8AZ
                   </div>
+                  <a 
+                    href="https://maps.google.com/?q=Certacs+House,+10-12+Westgate,+Skelmersdale,+Lancashire,+WN8+8AZ" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-primary hover:text-blue-600 text-sm mt-2 font-medium"
+                  >
+                    <Navigation className="h-4 w-4 mr-1" />
+                    Get Directions
+                  </a>
                 </div>
               </div>
 
@@ -116,7 +125,10 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <div className="font-semibold text-gray-900">Phone</div>
-                  <div className="text-gray-600">+44(0)1695 363923</div>
+                  <div className="text-gray-600">
+                    +44(0)1695 363923<br/>
+                    +44(0) 7459346514
+                  </div>
                 </div>
               </div>
 
