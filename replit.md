@@ -124,6 +124,7 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - June 27, 2025: Changed Mario Santos (formerly Maria Santos) testimonial location from "Philippines" to "Gulf country"
 - June 27, 2025: Removed all profile pictures from testimonials section
 - June 27, 2025: Updated Raj Patel to Chef from Mumbai and Michael Chen to Data Analyst
+- June 27, 2025: Changed Rosa Dela Cruz nationality from "Filipino" to "Filipina" in testimonial
 
 ## Changelog
 

@@ -20,9 +20,9 @@ const testimonials = [
   {
     name: "Rosa Dela Cruz",
     role: "Registered Nurse",
-    nationality: "Filipino",
+    nationality: "Filipina",
     image: "",
-    content: "As a Filipino nurse, I was nervous about working in the UK. Oyster Employment guided me through everything - from exam preparation to airport welcome. They truly care about their candidates' success. Highly recommended!"
+    content: "As a Filipina nurse, I was nervous about working in the UK. Oyster Employment guided me through everything - from exam preparation to airport welcome. They truly care about their candidates' success. Highly recommended!"
   },
   {
     name: "Priya Sharma",
