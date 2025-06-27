@@ -143,6 +143,7 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - June 27, 2025: Removed "Care Workers" card from Current Healthcare Opportunities section on health page
 - June 27, 2025: Reverted hospitality page images back to original uploaded assets per user preference
 - June 27, 2025: Added NMC and GMC hyperlinks to Language Proficiency Requirements section on health page
+- June 27, 2025: Updated fee reimbursement text to clarify "after placement" condition in both services and FAQ sections
 
 ## Changelog
 

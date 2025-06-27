@@ -61,7 +61,7 @@ const faqData = [
   },
   {
     question: "Do you provide reimbursement for exam fees?",
-    answer: "Yes! We offer reimbursement for IELTS/OET exam fees and NMC registration fees (including CBT & OSCE) for qualifying candidates. This is part of our comprehensive support package for healthcare professionals."
+    answer: "Yes! We offer reimbursement for IELTS/OET exam fees and NMC registration fees (including CBT & OSCE) after placement for qualifying candidates. This is part of our comprehensive support package for healthcare professionals."
   }
 ];
 
@@ -74,7 +74,7 @@ const services = [
   {
     icon: Award,
     title: "Fee Reimbursement",
-    description: "IELTS/OET exam fees and NMC registration (CBT & OSCE) reimbursement"
+    description: "IELTS/OET exam fees and NMC registration (CBT & OSCE) reimbursement after placement"
   },
   {
     icon: Plane,
