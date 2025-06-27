@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Coffee, Users, Target, CheckCircle, BookOpen, Plane, Home, FileText, Award, ChefHat, Hotel, Calendar } from "lucide-react";
 
+
 const hospitalitySpecialties = [
   {
     icon: ChefHat,
@@ -73,7 +74,7 @@ export default function Hospitality() {
               </div>
               <div className="mt-12 lg:mt-0">
                 <img 
-                  src="/attached_assets/pexels-andrea-piacquadio-3771110-scaled_1750797941212.jpg" 
+                  src="/attached_assets/pexels-andrea-piacquadio-3771110-scaled (1)_1751054410820.jpg" 
                   alt="Elegant hotel reception desk with service bell and reception sign" 
                   className="rounded-2xl shadow-2xl w-full"
                 />
@@ -88,7 +89,7 @@ export default function Hospitality() {
             <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
               <div className="mb-12 lg:mb-0">
                 <img 
-                  src="/attached_assets/pexels-cottonbro-6466289_1750798074680.jpg" 
+                  src="/attached_assets/pexels-cottonbro-6466289_1751054417497.jpg" 
                   alt="Professional hospitality service with elegant room service setup" 
                   className="rounded-2xl shadow-xl w-full"
                 />
