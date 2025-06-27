@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="mb-6">
-              <h3 className="text-2xl font-bold">Oyster Employment</h3>
+              <h3 className="text-2xl font-bold">Oyster Employment & Learning</h3>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               Creating opportunities and unlocking success in specialized fields. Your trusted partner for career growth and talent acquisition.
