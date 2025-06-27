@@ -38,7 +38,7 @@ export default function Hero() {
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 animate-fade-in">
               Find Your Dream Career Today
             </h1>
-            <p className="text-xl lg:text-2xl mb-8 text-blue-100 animate-slide-up">We create opportunities and unlock success in specialised fields, connecting talented professionals with their perfect roles across Health, Engineering, IT, and Hospitality sectors.</p>
+            <p className="text-xl lg:text-2xl mb-8 text-blue-100 animate-slide-up">We create opportunities and unlock success in specialised fields, connecting talented professionals with their perfect roles across Health, IT, Engineering and Hospitality sectors.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 onClick={scrollToContact}
