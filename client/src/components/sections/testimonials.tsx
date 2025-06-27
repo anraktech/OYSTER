@@ -11,7 +11,7 @@ const testimonials = [
     content: "Excellent recruitment agency to land your dream job. I would absolutely recommend it. Plus they provide learning resources as well!"
   },
   {
-    name: "Maria Santos",
+    name: "Mario Santos",
     role: "Registered Nurse",
     nationality: "Filipino",
     image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
