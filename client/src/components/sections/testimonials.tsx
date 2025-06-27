@@ -39,9 +39,9 @@ const testimonials = [
     content: "From Nigeria to the UK, Oyster Employment made my engineering career transition smooth and successful. Their team understood my aspirations and connected me with an excellent engineering firm. Truly grateful!"
   },
   {
-    name: "Fatima",
+    name: "Jennifer",
     role: "Healthcare Assistant",
-    nationality: "Bangladeshi",
+    nationality: "Pakistani",
     image: "",
     content: "As a health carer, I found the UK job market challenging to navigate. Oyster Employment provided incredible support, from documentation to placement. I'm now happily working in a top healthcare facility."
   },
