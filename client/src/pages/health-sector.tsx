@@ -223,9 +223,7 @@ export default function HealthSector() {
 
             <div className="bg-primary/10 p-8 rounded-2xl border-l-4 border-primary">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Are You Ready to Make a Difference?</h3>
-              <p className="text-gray-700 mb-4">
-                If you're motivated, compassionate, and have good English skills, we can unlock your potential through our partner providers who offer IELTS and OET courses to meet English language requirements.
-              </p>
+              <p className="text-gray-700 mb-4">If you're motivated, compassionate, and have good English skills, we can unlock your potential through our partners, who offering IELTS and OET courses to meet English language requirements.</p>
             </div>
           </div>
         </section>
