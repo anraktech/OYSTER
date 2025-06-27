@@ -127,7 +127,7 @@ export default function HealthSector() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
               <div>
-                <h1 className="text-5xl font-bold mb-6">Join Healthcare Sector Proudly</h1>
+                <h1 className="text-5xl font-bold mb-6">Join Health Sector Proudly</h1>
                 <p className="text-xl text-blue-100 mb-8">
                   "Care" means "Comprehensive Harmonious Relation" - We provide quality employment solutions in the UK health sector through our dedicated local and international candidates.
                 </p>
