@@ -15,7 +15,7 @@ const testimonials = [
     role: "Registered Nurse",
     nationality: "Filipino",
     image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
-    content: "Coming from the Philippines as a nurse, Oyster Employment made my UK journey seamless. Their support from visa assistance to finding the perfect hospital placement was exceptional. I'm now working in my dream role!"
+    content: "Coming from the Gulf country as a nurse, Oyster Employment made my UK journey seamless. Their support from visa assistance to finding the perfect hospital placement was exceptional. I'm now working in my dream role!"
   },
   {
     name: "Rosa Dela Cruz",

@@ -120,6 +120,8 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - June 24, 2025: Fixed Priya Sharma testimonial photo and removed tagline explanation from Work Together section
 - June 24, 2025: Added tagline explanation to About page Work Together section only
 - June 24, 2025: Updated hospitality page hero image to elegant hotel reception desk with service bell
+- June 27, 2025: Updated stats section text to use "all sectors" and British spelling "Specialised"
+- June 27, 2025: Changed Maria Santos testimonial location from "Philippines" to "Gulf country"
 
 ## Changelog
 

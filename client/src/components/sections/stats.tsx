@@ -4,9 +4,9 @@ export default function Stats() {
   const stats = [
     { 
       number: "4", 
-      label: "Specialized Sectors",
+      label: "Specialised Sectors",
       icon: Target,
-      description: "Expert recruitment across Health, IT, Engineering & Hospitality"
+      description: "Expert recruitment across all sectors"
     },
     { 
       number: "98%", 
