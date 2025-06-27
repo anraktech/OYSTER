@@ -31,7 +31,6 @@ export default function Hero() {
         <div className="absolute top-0 left-1/4 w-px h-32 bg-gradient-to-b from-transparent via-white/20 to-transparent animate-pulse"></div>
         <div className="absolute top-16 right-1/4 w-px h-24 bg-gradient-to-b from-transparent via-accent/30 to-transparent animate-pulse-delayed"></div>
       </div>
-
       {/* Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
@@ -39,9 +38,7 @@ export default function Hero() {
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 animate-fade-in">
               Find Your Dream Career Today
             </h1>
-            <p className="text-xl lg:text-2xl mb-8 text-blue-100 animate-slide-up">
-              We create opportunities and unlock success in specialized fields, connecting talented professionals with their perfect roles across Health, Engineering, IT, and Hospitality sectors.
-            </p>
+            <p className="text-xl lg:text-2xl mb-8 text-blue-100 animate-slide-up">We create opportunities and unlock success in specialised fields, connecting talented professionals with their perfect roles across Health, Engineering, IT, and Hospitality sectors.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 onClick={scrollToContact}
