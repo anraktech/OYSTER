@@ -218,15 +218,7 @@ export default function HealthSector() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-white border-0 shadow-lg text-center p-6">
-                <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Target className="h-8 w-8 text-purple-600" />
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Care Workers</h3>
-                  <p className="text-gray-600">Compassionate care professionals</p>
-                </CardContent>
-              </Card>
+              
             </div>
 
             <div className="bg-primary/10 p-8 rounded-2xl border-l-4 border-primary">
