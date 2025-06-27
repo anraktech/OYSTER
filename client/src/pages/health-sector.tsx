@@ -266,10 +266,30 @@ export default function HealthSector() {
                 <HelpCircle className="h-6 w-6 text-yellow-600 mr-3 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Important Note</h4>
-                  <p className="text-gray-700">
+                  <p className="text-gray-700 mb-3">
                     Language exam score requirements may vary slightly based on the specific position you're seeking. 
                     For the latest updates regarding NMC UK & GMC UK requirements, please check their official websites 
                     or contact us for personalized guidance.
+                  </p>
+                  <p className="text-gray-700">
+                    Please click for any upcoming updates in regards with{' '}
+                    <a 
+                      href="https://www.nmc.org.uk/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800 underline font-medium"
+                    >
+                      NMC
+                    </a>
+                    {' '}&{' '}
+                    <a 
+                      href="https://www.gmc-uk.org/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800 underline font-medium"
+                    >
+                      GMC
+                    </a>
                   </p>
                 </div>
               </div>

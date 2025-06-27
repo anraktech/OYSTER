@@ -142,6 +142,7 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - June 27, 2025: Fixed hospitality page image display issues by replacing broken asset paths with working Unsplash URLs
 - June 27, 2025: Removed "Care Workers" card from Current Healthcare Opportunities section on health page
 - June 27, 2025: Reverted hospitality page images back to original uploaded assets per user preference
+- June 27, 2025: Added NMC and GMC hyperlinks to Language Proficiency Requirements section on health page
 
 ## Changelog
 
