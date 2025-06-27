@@ -26,10 +26,10 @@ const testimonials = [
   },
   {
     name: "Priya",
-    role: "Software Developer",
+    role: "Nurse",
     nationality: "Indian",
     image: "",
-    content: "Being from India, I was worried about the visa process and finding a good IT role in the UK. Oyster Employment handled everything professionally and found me a perfect position that matches my skills and career goals."
+    content: "Being from India, I was worried about the visa process and finding a good nursing role in the UK. Oyster Employment handled everything professionally and found me a perfect position that matches my skills and career goals."
   },
   {
     name: "Adebayo",
