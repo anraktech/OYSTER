@@ -60,7 +60,7 @@ const testimonials = [
     content: "Professional service with genuine care for finding the right fit. They understood my career goals and matched me perfectly with a tech company that values innovation."
   },
   {
-    name: "Aisha",
+    name: "Zoya",
     role: "Midwife",
     nationality: "Pakistani",
     image: "",

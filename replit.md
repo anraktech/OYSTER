@@ -129,7 +129,7 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - June 27, 2025: Changed Fatima from Nigerian to Bangladeshi nationality
 - June 27, 2025: Updated Fatima's testimonial text from "Bangladeshi healthcare professional" to "health carer"
 - June 27, 2025: Changed Michael's nationality from Malaysian to Indian
-- June 27, 2025: Added new testimonial for Aisha, a Pakistani midwife
+- June 27, 2025: Added new testimonial for Zoya, a Pakistani midwife
 
 ## Changelog
 
