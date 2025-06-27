@@ -4,56 +4,56 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const testimonials = [
   {
-    name: "Nidhi Ghodele",
+    name: "Nidhi",
     role: "Web Developer & IT Assistant",
     nationality: "Indian",
     image: "",
     content: "Excellent recruitment agency to land your dream job. I would absolutely recommend it. Plus they provide learning resources as well!"
   },
   {
-    name: "Mario Santos",
+    name: "Mario",
     role: "Registered Nurse",
     nationality: "Filipino",
     image: "",
     content: "Coming from the Gulf country as a nurse, Oyster Employment made my UK journey seamless. Their support from visa assistance to finding the perfect hospital placement was exceptional. I'm now working in my dream role!"
   },
   {
-    name: "Rosa Dela Cruz",
+    name: "Rosa",
     role: "Registered Nurse",
     nationality: "Filipina",
     image: "",
     content: "As a Filipina nurse, I was nervous about working in the UK. Oyster Employment guided me through everything - from exam preparation to airport welcome. They truly care about their candidates' success. Highly recommended!"
   },
   {
-    name: "Priya Sharma",
+    name: "Priya",
     role: "Software Developer",
     nationality: "Indian",
     image: "",
     content: "Being from India, I was worried about the visa process and finding a good IT role in the UK. Oyster Employment handled everything professionally and found me a perfect position that matches my skills and career goals."
   },
   {
-    name: "Adebayo Johnson",
+    name: "Adebayo",
     role: "Civil Engineer",
     nationality: "Nigerian",
     image: "",
     content: "From Nigeria to the UK, Oyster Employment made my engineering career transition smooth and successful. Their team understood my aspirations and connected me with an excellent engineering firm. Truly grateful!"
   },
   {
-    name: "Fatima Okafor",
+    name: "Fatima",
     role: "Healthcare Assistant",
-    nationality: "Nigerian",
+    nationality: "Bangladeshi",
     image: "",
-    content: "As a Nigerian healthcare professional, I found the UK job market challenging to navigate. Oyster Employment provided incredible support, from documentation to placement. I'm now happily working in a top healthcare facility."
+    content: "As a Bangladeshi healthcare professional, I found the UK job market challenging to navigate. Oyster Employment provided incredible support, from documentation to placement. I'm now happily working in a top healthcare facility."
   },
   {
-    name: "Raj Patel",
+    name: "Raj",
     role: "Chef",
     nationality: "Indian",
     image: "",
     content: "Coming from Mumbai, I was uncertain about relocating to the UK for work. Oyster Employment not only found me a great chef position but also helped with accommodation and settling in. Outstanding service!"
   },
   {
-    name: "Michael Chen",
+    name: "Michael",
     role: "Data Analyst",
     nationality: "Malaysian",
     image: "",

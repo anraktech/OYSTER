@@ -125,6 +125,8 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - June 27, 2025: Removed all profile pictures from testimonials section
 - June 27, 2025: Updated Raj Patel to Chef from Mumbai and Michael Chen to Data Analyst
 - June 27, 2025: Changed Rosa Dela Cruz nationality from "Filipino" to "Filipina" in testimonial
+- June 27, 2025: Removed all second names from testimonials (e.g., Nidhi Ghodele → Nidhi)
+- June 27, 2025: Changed Fatima from Nigerian to Bangladeshi nationality
 
 ## Changelog
 
