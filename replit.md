@@ -140,6 +140,8 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - June 27, 2025: Added Google Maps directions link to contact address
 - June 27, 2025: Added second mobile number +44(0) 7459346514 to contact section
 - June 27, 2025: Fixed hospitality page image display issues by replacing broken asset paths with working Unsplash URLs
+- June 27, 2025: Removed "Care Workers" card from Current Healthcare Opportunities section on health page
+- June 27, 2025: Reverted hospitality page images back to original uploaded assets per user preference
 
 ## Changelog
 
