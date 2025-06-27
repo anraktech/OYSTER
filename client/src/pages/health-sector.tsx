@@ -403,7 +403,7 @@ export default function HealthSector() {
         {/* Call to Action */}
         <section className="py-20 gradient-bg text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl font-bold mb-6">Are You Ready to Start Your Career in the UK?</h2>
+            <h2 className="text-4xl font-bold mb-6">Are You Ready to Start Your Career in Health Sector?</h2>
             <p className="text-xl text-blue-100 mb-8">
               Join thousands of healthcare professionals who have successfully transitioned to meaningful careers in the UK through our comprehensive support system.
             </p>
