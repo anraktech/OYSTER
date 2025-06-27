@@ -144,6 +144,7 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - June 27, 2025: Reverted hospitality page images back to original uploaded assets per user preference
 - June 27, 2025: Added NMC and GMC hyperlinks to Language Proficiency Requirements section on health page
 - June 27, 2025: Updated fee reimbursement text to clarify "after placement" condition in both services and FAQ sections
+- June 27, 2025: Fixed hospitality page image display by copying images to client/public/images directory with clean filenames
 
 ## Changelog
 
