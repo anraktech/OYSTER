@@ -214,7 +214,7 @@ export default function HealthSector() {
                     <Award className="h-8 w-8 text-green-600" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">Specialists</h3>
-                  <p className="text-gray-600">Medical specialists</p>
+                  <p className="text-gray-600">Any Medical Professionals</p>
                 </CardContent>
               </Card>
 
