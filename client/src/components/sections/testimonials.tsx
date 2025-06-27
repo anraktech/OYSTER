@@ -43,7 +43,7 @@ const testimonials = [
     role: "Healthcare Assistant",
     nationality: "Bangladeshi",
     image: "",
-    content: "As a Bangladeshi healthcare professional, I found the UK job market challenging to navigate. Oyster Employment provided incredible support, from documentation to placement. I'm now happily working in a top healthcare facility."
+    content: "As a health carer, I found the UK job market challenging to navigate. Oyster Employment provided incredible support, from documentation to placement. I'm now happily working in a top healthcare facility."
   },
   {
     name: "Raj",
@@ -55,9 +55,16 @@ const testimonials = [
   {
     name: "Michael",
     role: "Data Analyst",
-    nationality: "Malaysian",
+    nationality: "Indian",
     image: "",
     content: "Professional service with genuine care for finding the right fit. They understood my career goals and matched me perfectly with a tech company that values innovation."
+  },
+  {
+    name: "Aisha",
+    role: "Midwife",
+    nationality: "Pakistani",
+    image: "",
+    content: "Coming from Pakistan as a midwife, I was excited but nervous about working in the UK healthcare system. Oyster Employment made the transition seamless, helping with registration and finding the perfect maternity unit. Their support was invaluable throughout my journey."
   }
 ];
 

@@ -127,6 +127,9 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - June 27, 2025: Changed Rosa Dela Cruz nationality from "Filipino" to "Filipina" in testimonial
 - June 27, 2025: Removed all second names from testimonials (e.g., Nidhi Ghodele → Nidhi)
 - June 27, 2025: Changed Fatima from Nigerian to Bangladeshi nationality
+- June 27, 2025: Updated Fatima's testimonial text from "Bangladeshi healthcare professional" to "health carer"
+- June 27, 2025: Changed Michael's nationality from Malaysian to Indian
+- June 27, 2025: Added new testimonial for Aisha, a Pakistani midwife
 
 ## Changelog
 
