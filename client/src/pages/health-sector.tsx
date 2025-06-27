@@ -193,7 +193,7 @@ export default function HealthSector() {
                   <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Heart className="h-8 w-8 text-red-600" />
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Nurses</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">Nurses and Midwives</h3>
                   <p className="text-gray-600">Registered and specialised nurses and midwives across all departments</p>
                 </CardContent>
               </Card>
