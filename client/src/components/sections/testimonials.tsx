@@ -26,7 +26,7 @@ const testimonials = [
   },
   {
     name: "Priya",
-    role: "Nurse",
+    role: "Registered Nurse",
     nationality: "Indian",
     image: "",
     content: "Being from India, I was worried about the visa process and finding a good nursing role in the UK. Oyster Employment handled everything professionally and found me a perfect position that matches my skills and career goals."
@@ -39,7 +39,7 @@ const testimonials = [
     content: "From Nigeria to the UK, Oyster Employment made my engineering career transition smooth and successful. Their team understood my aspirations and connected me with an excellent engineering firm. Truly grateful!"
   },
   {
-    name: "Jennifer",
+    name: "Saba",
     role: "Healthcare Assistant",
     nationality: "Pakistani",
     image: "",

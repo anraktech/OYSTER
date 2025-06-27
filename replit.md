@@ -132,6 +132,8 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - June 27, 2025: Added new testimonial for Zoya, a Pakistani midwife
 - June 27, 2025: Changed Priya's role from Software Developer to Nurse
 - June 27, 2025: Changed Fatima to Jennifer and nationality from Bangladeshi to Pakistani
+- June 27, 2025: Updated Priya from "Nurse" to "Registered Nurse"
+- June 27, 2025: Changed Jennifer to Saba
 
 ## Changelog
 
