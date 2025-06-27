@@ -128,7 +128,7 @@ export default function HealthSector() {
             <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
               <div>
                 <h1 className="text-5xl font-bold mb-6">Join Health Sector Proudly</h1>
-                <p className="text-xl text-blue-100 mb-8">"Care" means "Comprehensive Harmonious Relation" - We provide quality employment solutions in the UK health sector and worldwide through our dedicated local and international professionals.</p>
+                <p className="text-xl text-blue-100 mb-8">"Care" means "Comprehensive Harmonious Relation" - We provide quality employment solutions in the UK health sector through our dedicated local and international professionals.</p>
                 <Button 
                   onClick={scrollToContact}
                   className="bg-accent text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-500 transition-all transform hover:scale-105"
