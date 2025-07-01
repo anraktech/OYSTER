@@ -54,35 +54,40 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      // For now, simulate a successful submission
-      // You'll need to replace this with your actual Formspree form ID
-      
-      await new Promise(resolve => setTimeout(resolve, 1500)); // Simulate network delay
-      
-      toast({
-        title: "Message sent successfully!",
-        description: "We'll get back to you as soon as possible.",
+      const formData = new FormData();
+      formData.append('firstName', form.firstName);
+      formData.append('lastName', form.lastName);
+      formData.append('email', form.email);
+      formData.append('phone', form.phone);
+      formData.append('sector', form.sector);
+      formData.append('message', form.message);
+      formData.append('_subject', `New Contact Form Submission from ${form.firstName} ${form.lastName}`);
+
+      const response = await fetch('https://formspree.io/f/xpwrbnqk', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
       });
-      
-      setForm({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        sector: "",
-        message: "",
-        agreeToTerms: false
-      });
-      
-      // Log the form data for testing purposes
-      console.log('Contact form submission:', {
-        name: `${form.firstName} ${form.lastName}`,
-        email: form.email,
-        phone: form.phone,
-        sector: form.sector,
-        message: form.message
-      });
-      
+
+      if (response.ok) {
+        toast({
+          title: "Message sent successfully!",
+          description: "We'll get back to you as soon as possible.",
+        });
+        setForm({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          sector: "",
+          message: "",
+          agreeToTerms: false
+        });
+      } else {
+        throw new Error('Failed to send message');
+      }
     } catch (error) {
       toast({
         title: "Error sending message",

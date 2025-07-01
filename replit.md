@@ -146,6 +146,7 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - June 27, 2025: Updated fee reimbursement text to clarify "after placement" condition in both services and FAQ sections
 - June 27, 2025: Fixed hospitality page image display by copying images to client/public/images directory with clean filenames
 - June 30, 2025: Replaced database contact form with Formspree integration for direct email submissions
+- June 30, 2025: Connected contact form to user's Formspree endpoint (xpwrbnqk) for live email delivery
 
 ## Changelog
 
