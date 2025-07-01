@@ -32,10 +32,9 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
+  const handleSubmit = (e: React.FormEvent) => {
     if (!form.firstName || !form.lastName || !form.email || !form.message) {
+      e.preventDefault();
       toast({
         title: "Please fill in all required fields",
         variant: "destructive",
@@ -44,6 +43,7 @@ export default function Contact() {
     }
 
     if (!form.agreeToTerms) {
+      e.preventDefault();
       toast({
         title: "Please agree to the terms and conditions",
         variant: "destructive",
@@ -51,52 +51,8 @@ export default function Contact() {
       return;
     }
 
+    // Let the form submit naturally to Formspree
     setIsSubmitting(true);
-
-    try {
-      const formData = new FormData();
-      formData.append('firstName', form.firstName);
-      formData.append('lastName', form.lastName);
-      formData.append('email', form.email);
-      formData.append('phone', form.phone);
-      formData.append('sector', form.sector);
-      formData.append('message', form.message);
-      formData.append('_subject', `New Contact Form Submission from ${form.firstName} ${form.lastName}`);
-
-      const response = await fetch('https://formspree.io/f/xpwrbnqk', {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
-
-      if (response.ok) {
-        toast({
-          title: "Message sent successfully!",
-          description: "We'll get back to you as soon as possible.",
-        });
-        setForm({
-          firstName: "",
-          lastName: "",
-          email: "",
-          phone: "",
-          sector: "",
-          message: "",
-          agreeToTerms: false
-        });
-      } else {
-        throw new Error('Failed to send message');
-      }
-    } catch (error) {
-      toast({
-        title: "Error sending message",
-        description: "Please try again or contact us directly.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
   };
 
   const updateForm = (field: keyof ContactForm, value: string | boolean) => {
