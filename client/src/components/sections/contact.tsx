@@ -8,8 +8,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { MapPin, Phone, Mail, Send, Clock, Navigation } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
 
 interface ContactForm {
   firstName: string;
@@ -32,36 +30,9 @@ export default function Contact() {
     message: "",
     agreeToTerms: false
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const contactMutation = useMutation({
-    mutationFn: async (data: ContactForm) => {
-      return await apiRequest("POST", "/api/contact", data);
-    },
-    onSuccess: () => {
-      toast({
-        title: "Message sent successfully!",
-        description: "We'll get back to you as soon as possible.",
-      });
-      setForm({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        sector: "",
-        message: "",
-        agreeToTerms: false
-      });
-    },
-    onError: (error) => {
-      toast({
-        title: "Error sending message",
-        description: error.message,
-        variant: "destructive",
-      });
-    },
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!form.firstName || !form.lastName || !form.email || !form.message) {
@@ -80,7 +51,52 @@ export default function Contact() {
       return;
     }
 
-    contactMutation.mutate(form);
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData();
+      formData.append('firstName', form.firstName);
+      formData.append('lastName', form.lastName);
+      formData.append('email', form.email);
+      formData.append('phone', form.phone);
+      formData.append('sector', form.sector);
+      formData.append('message', form.message);
+      formData.append('_subject', `New Contact Form Submission from ${form.firstName} ${form.lastName}`);
+
+      const response = await fetch('https://formspree.io/f/mqaknekj', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Message sent successfully!",
+          description: "We'll get back to you as soon as possible.",
+        });
+        setForm({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          sector: "",
+          message: "",
+          agreeToTerms: false
+        });
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      toast({
+        title: "Error sending message",
+        description: "Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const updateForm = (field: keyof ContactForm, value: string | boolean) => {
@@ -249,10 +265,10 @@ export default function Contact() {
 
                 <Button 
                   type="submit" 
-                  disabled={contactMutation.isPending}
+                  disabled={isSubmitting}
                   className="w-full bg-primary text-white py-4 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
                 >
-                  {contactMutation.isPending ? (
+                  {isSubmitting ? (
                     "Sending..."
                   ) : (
                     <>
