@@ -228,6 +228,96 @@ export default function HealthSector() {
           </div>
         </section>
 
+        {/* OET Preparation */}
+        <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Occupational English Test (OET)</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Specialised English language preparation for healthcare professionals seeking UK registration.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="bg-white rounded-2xl shadow-xl p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-6">OET for Doctors & Nurses</h3>
+                  <p className="text-gray-700 mb-6">
+                    Doctors and Nurses preparing for the OET study medical language at higher level. This course involves learning a wide range of medical terms and vocabulary, improving grammatical accuracy, and improving specific functional language skills, such as the ability to reassure, explain, show sensitivity and manage distress.
+                  </p>
+                  <p className="text-gray-700 mb-6">
+                    Preparing for the OET strengthens the language skills needed by those Doctors required to take a PLAB for GMC or Nurses preparing CBT and OSCE test for NMC Registration.
+                  </p>
+                  
+                  <div className="bg-blue-50 p-6 rounded-lg mb-6">
+                    <h4 className="font-bold text-gray-900 mb-3">How difficult is Grade B?</h4>
+                    <p className="text-gray-700 text-sm">
+                      Grade B is the most commonly required Grade by regulatory bodies such as NMC and GMC in the UK. This is advanced level, equivalent to C1 in the Common European Framework or 7 in the Academic IELTS test. It is attainable but requires training on language skills and test techniques. Achieving Grade B strongly suggests that a medical/nursing professional has the right language skills to function safely and effectively in an English-speaking environment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div className="bg-white rounded-2xl shadow-xl p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-6">The OET Preparation Programme at Oyster</h3>
+                  <p className="text-gray-700 mb-6">
+                    In collaboration with a UK based medical education partner, Oyster has designed an OET preparation programme for Doctors and Nurses. Before commencement of the course, an OET candidate's level of English is assessed to determine the right course based on their learning requirement.
+                  </p>
+                  <p className="text-gray-700 mb-6">
+                    A strong language foundation is built by providing continuous, expert tutorials; regular progress tests; and thorough preparation for the test.
+                  </p>
+
+                  <div className="space-y-4">
+                    <h4 className="font-bold text-gray-900">Medical English Course Structure</h4>
+                    <div className="grid grid-cols-1 gap-3">
+                      {[
+                        "Comprehensive medical terminology",
+                        "Multiple practical scenarios – animated videos, dialogues, role plays",
+                        "Extensive vocabulary practice",
+                        "Functional language – reassuring, explaining, instructing, etc",
+                        "Pronunciation and intonation practice",
+                        "Grammar and writing skills practice"
+                      ].map((item, index) => (
+                        <div key={index} className="flex items-start">
+                          <CheckCircle className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                          <span className="text-gray-700 text-sm">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-white rounded-2xl shadow-xl p-8">
+                <h4 className="font-bold text-gray-900 mb-4">Fees and Charges</h4>
+                <p className="text-gray-700">
+                  Fees and charges are very competitive when matched with the international market price for the same level of courses. The fees are calculated based on the assessments made upon candidate's registration and vary accordingly learning requirements.
+                </p>
+              </div>
+
+              <div className="bg-yellow-50 rounded-2xl border-2 border-yellow-200 p-8">
+                <h4 className="font-bold text-gray-900 mb-4">Disclaimer</h4>
+                <p className="text-gray-700 text-sm">
+                  Oyster Worldwide Employment & Learning Services is an independent company, provide help and assistance to all candidates with language courses requirement and others who require assistance registering with NMC, UK. We are not affiliated with any Registration or Nursing Regularity Body in the United Kingdom.
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <a 
+                href="/#contact" 
+                className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+              >
+                <BookOpen className="mr-2 h-5 w-5" />
+                Start Learning
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Language Requirements */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
