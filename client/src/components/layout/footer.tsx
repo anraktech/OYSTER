@@ -1,4 +1,5 @@
-import { Facebook, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Linkedin } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -17,7 +18,7 @@ export default function Footer() {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
-                <Twitter className="h-5 w-5" />
+                <FaXTwitter className="h-5 w-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                 <Facebook className="h-5 w-5" />
