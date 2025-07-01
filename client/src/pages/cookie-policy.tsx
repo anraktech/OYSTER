@@ -12,56 +12,63 @@ export default function CookiePolicy() {
           
           <Card className="bg-white shadow-lg">
             <CardContent className="p-8 prose prose-gray max-w-none">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">What are Cookies?</h2>
-              <p className="mb-6">
-                Cookies are small files that a site or its service provider transfers to your computer's hard drive through 
-                your Web browser (if you allow) that enables the site's or service provider's systems to recognize your browser 
-                and capture and remember certain information. For instance, we use cookies to remember and process your activity with us.
-              </p>
-
-              <p className="mb-6">
-                They are also used to help us understand preferences based on previous or current activities which enables us 
-                to provide you with improved services. We also use cookies to compile aggregate data about site traffic and 
-                site interaction so that we can offer better site experiences and tools in the future.
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">What Are Cookies?</h2>
+              <p className="mb-8">
+                Cookies are small files stored on your device to help recognise your browser and improve user experience.
               </p>
 
               <h2 className="text-2xl font-bold text-gray-900 mb-4">How We Use Cookies</h2>
-              <p className="mb-6">
-                We use cookies for a variety of reasons detailed below. Unfortunately, in most cases there are no industry 
-                standard options for disabling cookies without disabling the functionality and features they add to this site. 
-                It is recommended that you leave on all cookies, if you are not sure whether you need them or not in case, 
-                they are used to provide a service that you use.
+              <p className="mb-4">We use cookies for:</p>
+              <ul className="list-disc pl-6 mb-8">
+                <li>Website functionality</li>
+                <li>Remembering form inputs</li>
+                <li>Site preferences</li>
+                <li>Analytics (e.g., Google Analytics)</li>
+              </ul>
+
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Consent for Cookies</h2>
+              <p className="mb-4">
+                We obtain explicit consent before setting non-essential cookies. A cookie banner appears on your first visit with options to:
+              </p>
+              <ul className="list-disc pl-6 mb-6">
+                <li>Accept All</li>
+                <li>Reject All</li>
+                <li>Customise Preferences</li>
+              </ul>
+              <p className="mb-8">
+                Non-essential cookies (e.g., analytics) are only set with your active consent. Consent can be withdrawn at any time via the "Cookie Preferences" link in our website footer.
               </p>
 
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">The Cookies We Set</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Types of Cookies</h2>
               
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Forms Related Cookies</h3>
-              <p className="mb-6">
-                When you submit data through a form such as those found on contact pages, candidate applications, or comment 
-                forms cookies may be set to remember your user details for future correspondence.
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Strictly Necessary Cookies</h3>
+              <p className="mb-6">Required for website functionality (e.g., form submissions)</p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Preference Cookies</h3>
+              <p className="mb-6">Remember your preferences (e.g., language settings)</p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Analytics Cookies</h3>
+              <p className="mb-6">Measure website traffic and performance (e.g., Google Analytics)</p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Marketing Cookies</h3>
+              <p className="mb-8">Only used if needed, currently not in use</p>
+
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Third-Party Cookies</h2>
+              <p className="mb-8">
+                We use Google Analytics to understand website usage. These third-party cookies collect anonymised data. Full details are available in our Cookie Policy.
               </p>
 
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Site Preference Cookies</h3>
-              <p className="mb-6">
-                In order to provide you with a great experience on this site we provide the functionality to set your preferences 
-                for how this site runs when you use it. In order to remember your preferences, we need to set up cookies so 
-                that information can be called whenever you interact with a page is affected by your preferences.
-              </p>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Cookie Management</h2>
+              <p className="mb-4">We provide a consent management tool allowing users to:</p>
+              <ul className="list-disc pl-6 mb-8">
+                <li>View and categorise cookies</li>
+                <li>Toggle cookie categories on/off</li>
+                <li>Revoke or change consent anytime</li>
+              </ul>
 
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Third Party Cookies</h2>
-              <p className="mb-6">
-                It is not our intention to utilise third party cookies for advertising third party products nor do we intend 
-                to use third party cookies generally. However, in some cases we shall be using third party cookies such as 
-                Google Analytics to help us understand how you use the site and ways, we can improve your experience. These 
-                cookies may track things such as how long you spend on the site and the pages that you visit so we can continue 
-                to produce engaging content.
+              <p className="text-sm text-gray-600 text-center">
+                <strong>Effective Date: 1st July 2025</strong>
               </p>
-
-              <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
-                <p className="mb-0 text-sm">
-                  <strong>Note:</strong> This Cookie Policy is effective from 31st May 2023.
-                </p>
-              </div>
             </CardContent>
           </Card>
         </div>

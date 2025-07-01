@@ -147,6 +147,8 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - June 27, 2025: Fixed hospitality page image display by copying images to client/public/images directory with clean filenames
 - June 30, 2025: Replaced database contact form with Formspree integration for direct email submissions
 - June 30, 2025: Connected contact form to user's Formspree endpoint (xpwrbnqk) for live email delivery
+- July 1, 2025: Updated all three legal policy pages (Privacy Policy, Terms & Conditions, Cookie Policy) with new comprehensive content provided by user
+- July 1, 2025: Added proper HTML form attributes to contact form for Formspree compatibility (action, method, name attributes)
 
 ## Changelog
 
