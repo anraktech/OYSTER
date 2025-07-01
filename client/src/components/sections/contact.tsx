@@ -171,12 +171,20 @@ export default function Contact() {
 
           <Card className="bg-gray-50 rounded-2xl p-8 border-0">
             <CardContent className="p-0">
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form 
+                action="https://formspree.io/f/xpwrbnqk"
+                method="POST"
+                onSubmit={handleSubmit} 
+                className="space-y-6"
+              >
+                <input type="hidden" name="_subject" value={`New Contact Form Submission from ${form.firstName} ${form.lastName}`} />
+                <input type="hidden" name="sector" value={form.sector} />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <Label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">First Name *</Label>
                     <Input
                       id="firstName"
+                      name="firstName"
                       type="text"
                       value={form.firstName}
                       onChange={(e) => updateForm('firstName', e.target.value)}
@@ -189,6 +197,7 @@ export default function Contact() {
                     <Label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">Last Name *</Label>
                     <Input
                       id="lastName"
+                      name="lastName"
                       type="text"
                       value={form.lastName}
                       onChange={(e) => updateForm('lastName', e.target.value)}
@@ -203,6 +212,7 @@ export default function Contact() {
                   <Label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email *</Label>
                   <Input
                     id="email"
+                    name="email"
                     type="email"
                     value={form.email}
                     onChange={(e) => updateForm('email', e.target.value)}
@@ -216,6 +226,7 @@ export default function Contact() {
                   <Label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Phone</Label>
                   <Input
                     id="phone"
+                    name="phone"
                     type="tel"
                     value={form.phone}
                     onChange={(e) => updateForm('phone', e.target.value)}
@@ -226,7 +237,7 @@ export default function Contact() {
 
                 <div>
                   <Label htmlFor="sector" className="block text-sm font-medium text-gray-700 mb-2">Sector of Interest</Label>
-                  <Select value={form.sector} onValueChange={(value) => updateForm('sector', value)}>
+                  <Select name="sector" value={form.sector} onValueChange={(value) => updateForm('sector', value)}>
                     <SelectTrigger className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
                       <SelectValue placeholder="Select a sector" />
                     </SelectTrigger>
@@ -243,6 +254,7 @@ export default function Contact() {
                   <Label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Message *</Label>
                   <Textarea
                     id="message"
+                    name="message"
                     rows={4}
                     value={form.message}
                     onChange={(e) => updateForm('message', e.target.value)}
