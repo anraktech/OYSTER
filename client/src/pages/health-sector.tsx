@@ -261,7 +261,7 @@ export default function HealthSector() {
               <div>
                 <div className="bg-white rounded-2xl shadow-xl p-8">
                   <h3 className="text-2xl font-bold text-gray-900 mb-6">The OET Preparation through Oyster WALS</h3>
-                  <p className="text-gray-700 mb-6">In collaboration with UK based english educational partner, Oyster has designed an OET preparation programme for Doctors and Nurses. Before commencement of the course, an OET candidate's level of English is assessed to determine the right course based on their learning requirement.</p>
+                  <p className="text-gray-700 mb-6">In collaboration with UK based english educational partner, Our partners have designed an OET preparation programme for Doctors and Nurses. Before commencement of the course, an OET candidate's level of English is assessed to determine the right course based on their learning requirement.</p>
                   <p className="text-gray-700 mb-6">
                     A strong language foundation is built by providing continuous, expert tutorials; regular progress tests; and thorough preparation for the test.
                   </p>
