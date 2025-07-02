@@ -19,10 +19,10 @@ const testimonials = [
   },
   {
     name: "Zoya",
-    role: "Midwife",
+    role: "Healthcare",
     nationality: "Pakistani",
     image: "",
-    content: "Coming from Pakistan as a midwife, I was excited but nervous about working in the UK healthcare system. Oyster Employment made the transition seamless, helping with registration and finding the perfect maternity unit. Their support was invaluable throughout my journey."
+    content: "Coming from Pakistan as a healthcare professional, I was excited but nervous about working in the UK healthcare system. Oyster Employment made the transition seamless, helping with registration and finding the perfect healthcare position. Their support was invaluable throughout my journey."
   },
   {
     name: "Nidhi",

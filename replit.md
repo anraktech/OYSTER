@@ -151,6 +151,7 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - July 1, 2025: Added proper HTML form attributes to contact form for Formspree compatibility (action, method, name attributes)
 - July 1, 2025: Added comprehensive OET (Occupational English Test) section to health-sector page with course details, structure, fees, and "Start Learning" button linking to contact form
 - July 1, 2025: Updated footer Twitter icon to new X logo using react-icons/fa6 package
+- July 2, 2025: Updated Zoya testimonial profession from "Midwife" to "Healthcare" and copyright year changed from 2024 to 2025
 
 ## Changelog
 

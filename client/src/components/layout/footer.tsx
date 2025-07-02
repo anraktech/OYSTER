@@ -49,7 +49,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            &copy; 2024 Oyster Employment. All rights reserved. | 
+            &copy; 2025 Oyster Employment. All rights reserved. | 
             <a href="/privacy-policy" className="hover:text-white transition-colors ml-1">Privacy Policy</a> | 
             <a href="/terms-conditions" className="hover:text-white transition-colors ml-1">Terms & Conditions</a> | 
             <a href="/cookie-policy" className="hover:text-white transition-colors ml-1">Cookie Policy</a>
