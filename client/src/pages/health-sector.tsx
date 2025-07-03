@@ -311,7 +311,7 @@ export default function HealthSector() {
 
             <div className="text-center mt-12">
               <a 
-                href="/contact" 
+                href="/learning" 
                 className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
               >
                 <BookOpen className="mr-2 h-5 w-5" />
