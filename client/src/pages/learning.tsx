@@ -9,11 +9,28 @@ export default function Learning() {
       <Navbar />
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white relative overflow-hidden">
-          <div className="absolute inset-0 bg-black/20"></div>
+        <section className="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white relative overflow-hidden">
+          {/* Background Effects */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-xl animate-pulse-slow"></div>
+            <div className="absolute top-32 right-20 w-24 h-24 bg-gradient-to-r from-accent/20 to-orange-400/20 rounded-full blur-lg animate-float-delayed"></div>
+            <div className="absolute bottom-20 left-1/4 w-20 h-20 bg-gradient-to-r from-green-400/20 to-blue-400/20 rounded-full blur-md animate-float"></div>
+            <div className="absolute top-1/2 right-1/3 w-16 h-16 bg-gradient-to-r from-pink-400/20 to-red-400/20 rounded-full blur-lg animate-pulse-delayed"></div>
+            
+            {/* Floating geometric shapes */}
+            <div className="absolute top-1/4 left-1/2 w-6 h-6 bg-white/20 rotate-45 animate-spin-slow"></div>
+            <div className="absolute bottom-1/3 right-1/4 w-4 h-4 bg-accent/30 rounded-full animate-float-slow"></div>
+          </div>
+          
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Language Learning Excellence
+              <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+                Language Learning
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-accent to-orange-400 bg-clip-text text-transparent">
+                Excellence
+              </span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto">
               Master IELTS and OET with expert guidance. Unlock your global career opportunities through specialized English language training.
@@ -286,6 +303,308 @@ export default function Learning() {
                 >
                   <BookOpen className="mr-2 h-5 w-5" />
                   Get Started Today
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Course Structure Section */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Comprehensive Course Structure</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Our expertly designed curriculum covers all aspects of IELTS and OET preparation with structured learning modules.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* IELTS Course */}
+              <Card className="bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200 shadow-xl">
+                <CardContent className="p-8">
+                  <div className="text-center mb-8">
+                    <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Globe className="h-10 w-10 text-white" />
+                    </div>
+                    <h3 className="text-3xl font-bold text-gray-900">IELTS Preparation</h3>
+                    <p className="text-blue-600 font-medium">International English Language Testing System</p>
+                  </div>
+
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="text-xl font-bold text-gray-900 mb-4">Core Modules</h4>
+                      <div className="space-y-3">
+                        {[
+                          "Listening Skills Development",
+                          "Reading Comprehension Strategies",
+                          "Writing Task 1 & 2 Mastery",
+                          "Speaking Confidence Building",
+                          "Grammar & Vocabulary Enhancement",
+                          "Test-Taking Strategies & Time Management"
+                        ].map((module, index) => (
+                          <div key={index} className="flex items-center">
+                            <CheckCircle className="h-5 w-5 text-blue-600 mr-3 flex-shrink-0" />
+                            <span className="text-gray-700">{module}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="bg-white p-6 rounded-lg shadow-sm">
+                      <h4 className="font-bold text-gray-900 mb-3">Course Features</h4>
+                      <ul className="text-sm text-gray-600 space-y-2">
+                        <li>• 40+ hours of structured learning</li>
+                        <li>• Practice tests with detailed feedback</li>
+                        <li>• Individual speaking sessions</li>
+                        <li>• Weekly progress assessments</li>
+                        <li>• Study materials and resources included</li>
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* OET Course */}
+              <Card className="bg-gradient-to-br from-green-50 to-green-100 border-green-200 shadow-xl">
+                <CardContent className="p-8">
+                  <div className="text-center mb-8">
+                    <div className="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Award className="h-10 w-10 text-white" />
+                    </div>
+                    <h3 className="text-3xl font-bold text-gray-900">OET Preparation</h3>
+                    <p className="text-green-600 font-medium">Occupational English Test for Healthcare</p>
+                  </div>
+
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="text-xl font-bold text-gray-900 mb-4">Specialized Modules</h4>
+                      <div className="space-y-3">
+                        {[
+                          "Medical Terminology & Vocabulary",
+                          "Healthcare Communication Skills",
+                          "Patient Interaction Scenarios",
+                          "Medical Writing & Documentation",
+                          "Listening in Clinical Context",
+                          "Speaking for Healthcare Professionals"
+                        ].map((module, index) => (
+                          <div key={index} className="flex items-center">
+                            <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
+                            <span className="text-gray-700">{module}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="bg-white p-6 rounded-lg shadow-sm">
+                      <h4 className="font-bold text-gray-900 mb-3">Course Features</h4>
+                      <ul className="text-sm text-gray-600 space-y-2">
+                        <li>• Healthcare-focused content delivery</li>
+                        <li>• Role-play exercises with medical scenarios</li>
+                        <li>• Grade B achievement guarantee program</li>
+                        <li>• NMC/GMC registration support</li>
+                        <li>• Continuous assessment and feedback</li>
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Learning Methodology Section */}
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Learning Methodology</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                A comprehensive approach combining traditional learning with modern interactive techniques.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                {
+                  step: "01",
+                  title: "Assessment",
+                  description: "Initial evaluation to determine your current proficiency level and learning needs",
+                  icon: Target,
+                  color: "blue"
+                },
+                {
+                  step: "02", 
+                  title: "Personalized Plan",
+                  description: "Customized study plan tailored to your goals and timeline requirements",
+                  icon: BookOpen,
+                  color: "green"
+                },
+                {
+                  step: "03",
+                  title: "Interactive Learning",
+                  description: "Engaging lessons with multimedia content, practice exercises, and real scenarios",
+                  icon: Users,
+                  color: "purple"
+                },
+                {
+                  step: "04",
+                  title: "Continuous Support",
+                  description: "Regular feedback, progress tracking, and expert guidance throughout your journey",
+                  icon: Award,
+                  color: "orange"
+                }
+              ].map((method, index) => (
+                <Card key={index} className="bg-white border-0 shadow-lg hover:shadow-xl transition-all text-center">
+                  <CardContent className="p-8">
+                    <div className={`w-16 h-16 bg-${method.color}-100 rounded-full flex items-center justify-center mx-auto mb-4`}>
+                      <method.icon className={`h-8 w-8 text-${method.color}-600`} />
+                    </div>
+                    <div className={`text-3xl font-bold text-${method.color}-600 mb-2`}>{method.step}</div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">{method.title}</h3>
+                    <p className="text-gray-600 text-sm">{method.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Course Schedule & Pricing */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Course Options & Schedule</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Flexible learning options designed to fit your schedule and learning preferences.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Intensive Course */}
+              <Card className="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-200 shadow-xl">
+                <CardContent className="p-8 text-center">
+                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Target className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Intensive Course</h3>
+                  <p className="text-gray-600 mb-6">Fast-track preparation for quick results</p>
+                  
+                  <div className="space-y-4 mb-8">
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Duration:</span>
+                      <span className="font-medium">4-6 weeks</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Classes:</span>
+                      <span className="font-medium">5 days/week</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Hours:</span>
+                      <span className="font-medium">3 hours/day</span>
+                    </div>
+                  </div>
+
+                  <div className="border-t pt-6">
+                    <p className="text-sm text-gray-600 mb-4">Perfect for urgent requirements</p>
+                    <a 
+                      href="/#contact" 
+                      className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors"
+                    >
+                      Enquire Now
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Regular Course */}
+              <Card className="bg-gradient-to-br from-green-50 to-green-100 border-2 border-green-200 shadow-xl transform scale-105">
+                <CardContent className="p-8 text-center">
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                    <span className="bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold">POPULAR</span>
+                  </div>
+                  <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <BookOpen className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Regular Course</h3>
+                  <p className="text-gray-600 mb-6">Comprehensive preparation with flexibility</p>
+                  
+                  <div className="space-y-4 mb-8">
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Duration:</span>
+                      <span className="font-medium">8-12 weeks</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Classes:</span>
+                      <span className="font-medium">3 days/week</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Hours:</span>
+                      <span className="font-medium">2 hours/day</span>
+                    </div>
+                  </div>
+
+                  <div className="border-t pt-6">
+                    <p className="text-sm text-gray-600 mb-4">Most comprehensive option</p>
+                    <a 
+                      href="/#contact" 
+                      className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 transition-colors"
+                    >
+                      Enquire Now
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Weekend Course */}
+              <Card className="bg-gradient-to-br from-purple-50 to-purple-100 border-2 border-purple-200 shadow-xl">
+                <CardContent className="p-8 text-center">
+                  <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Users className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Weekend Course</h3>
+                  <p className="text-gray-600 mb-6">Perfect for working professionals</p>
+                  
+                  <div className="space-y-4 mb-8">
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Duration:</span>
+                      <span className="font-medium">12-16 weeks</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Classes:</span>
+                      <span className="font-medium">Weekends only</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Hours:</span>
+                      <span className="font-medium">4 hours/day</span>
+                    </div>
+                  </div>
+
+                  <div className="border-t pt-6">
+                    <p className="text-sm text-gray-600 mb-4">Flexible for busy schedules</p>
+                    <a 
+                      href="/#contact" 
+                      className="inline-flex items-center px-6 py-3 bg-purple-600 text-white font-semibold rounded-full hover:bg-purple-700 transition-colors"
+                    >
+                      Enquire Now
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="mt-12 text-center">
+              <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 max-w-4xl mx-auto">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Competitive Pricing</h3>
+                <p className="text-gray-700 mb-6">
+                  Our fees are very competitive when matched with the international market price for the same level of courses. 
+                  The fees are calculated based on the assessments made upon candidate's registration and vary according to learning requirements.
+                </p>
+                <a 
+                  href="/#contact" 
+                  className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary/90 transition-colors shadow-lg"
+                >
+                  <BookOpen className="mr-2 h-5 w-5" />
+                  Get Custom Quote
                 </a>
               </div>
             </div>
