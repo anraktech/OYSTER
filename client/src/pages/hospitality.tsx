@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -47,6 +48,11 @@ const services = [
 ];
 
 export default function Hospitality() {
+  // Scroll to top when component mounts
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const scrollToContact = () => {
     window.location.href = '/#contact';
   };

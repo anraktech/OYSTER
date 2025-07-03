@@ -1,9 +1,9 @@
+import React, { useState } from "react";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Heart, Users, Globe, CheckCircle, BookOpen, Plane, Home, FileText, Award, Target, ChevronDown, ChevronUp, HelpCircle } from "lucide-react";
-import { useState } from "react";
 
 const requirements = [
   {
@@ -114,6 +114,11 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 }
 
 export default function HealthSector() {
+  // Scroll to top when component mounts
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const scrollToContact = () => {
     window.location.href = '/#contact';
   };
