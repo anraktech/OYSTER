@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Heart, Cog, Laptop, Coffee, ArrowRight } from "lucide-react";
+import { Heart, Cog, Laptop, Coffee, BookOpen, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 
 const services = [
@@ -11,6 +11,14 @@ const services = [
     color: "text-red-600",
     bgColor: "bg-red-100",
     link: "/health-sector"
+  },
+  {
+    icon: BookOpen,
+    title: "Learning",
+    description: "Comprehensive IELTS and OET preparation courses to help professionals achieve their language requirements.",
+    color: "text-purple-600",
+    bgColor: "bg-purple-100",
+    link: "/learning"
   },
   {
     icon: Laptop,
@@ -49,7 +57,7 @@ export default function Services() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {services.map((service) => {
             const IconComponent = service.icon;
             return (
