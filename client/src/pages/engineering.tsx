@@ -53,7 +53,7 @@ export default function Engineering() {
   }, []);
 
   const scrollToContact = () => {
-    window.location.href = '/#contact';
+    window.location.href = '/contact';
   };
 
   return (

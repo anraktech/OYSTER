@@ -53,7 +53,7 @@ export default function InformationTechnology() {
   }, []);
 
   const scrollToContact = () => {
-    window.location.href = '/#contact';
+    window.location.href = '/contact';
   };
 
   return (

@@ -162,6 +162,7 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - July 3, 2025: Added Contact page to main navigation replacing "Get Started" button
 - July 3, 2025: Fixed white space issues on Learning and Contact pages by adjusting hero section padding
 - July 3, 2025: Added scroll-to-top functionality to all pages (Learning, Contact, About, Health Sector, Engineering, IT, Hospitality)
+- July 3, 2025: Updated all contact links and functions across the website to redirect to the dedicated Contact page (/contact) instead of scrolling to the home page contact section
 
 ## Changelog
 

@@ -54,7 +54,7 @@ export default function Hospitality() {
   }, []);
 
   const scrollToContact = () => {
-    window.location.href = '/#contact';
+    window.location.href = '/contact';
   };
 
   return (

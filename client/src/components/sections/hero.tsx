@@ -3,10 +3,7 @@ import { Search, Building } from "lucide-react";
 
 export default function Hero() {
   const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.location.href = '/contact';
   };
 
   return (

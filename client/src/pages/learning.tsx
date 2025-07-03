@@ -442,7 +442,7 @@ export default function Learning() {
                   <div className="border-t pt-6">
                     <p className="text-sm text-gray-600 mb-4">Perfect for urgent requirements</p>
                     <a 
-                      href="/#contact" 
+                      href="/contact" 
                       className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors"
                     >
                       Enquire Now
@@ -481,7 +481,7 @@ export default function Learning() {
                   <div className="border-t pt-6">
                     <p className="text-sm text-gray-600 mb-4">Most comprehensive option</p>
                     <a 
-                      href="/#contact" 
+                      href="/contact" 
                       className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 transition-colors"
                     >
                       Enquire Now
@@ -517,7 +517,7 @@ export default function Learning() {
                   <div className="border-t pt-6">
                     <p className="text-sm text-gray-600 mb-4">Flexible for busy schedules</p>
                     <a 
-                      href="/#contact" 
+                      href="/contact" 
                       className="inline-flex items-center px-6 py-3 bg-purple-600 text-white font-semibold rounded-full hover:bg-purple-700 transition-colors"
                     >
                       Enquire Now
@@ -535,7 +535,7 @@ export default function Learning() {
                   The fees are calculated based on the assessments made upon candidate's registration and vary according to learning requirements.
                 </p>
                 <a 
-                  href="/#contact" 
+                  href="/contact" 
                   className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary/90 transition-colors shadow-lg"
                 >
                   <BookOpen className="mr-2 h-5 w-5" />
@@ -608,7 +608,7 @@ export default function Learning() {
                   Partnering with Oyster WALS means joining a trusted, results-driven pathway for success in English proficiency exams.
                 </p>
                 <a 
-                  href="/#contact" 
+                  href="/contact" 
                   className="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-100 transition-colors shadow-lg"
                 >
                   <BookOpen className="mr-2 h-5 w-5" />
@@ -628,7 +628,7 @@ export default function Learning() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="/#contact" 
+                href="/contact" 
                 className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary/90 transition-colors shadow-lg"
               >
                 <BookOpen className="mr-2 h-5 w-5" />

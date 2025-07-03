@@ -3,10 +3,7 @@ import { UserPlus, Handshake } from "lucide-react";
 
 export default function CTA() {
   const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.location.href = '/contact';
   };
 
   return (
