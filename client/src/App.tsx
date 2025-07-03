@@ -13,6 +13,7 @@ import PrivacyPolicy from "@/pages/privacy-policy";
 import TermsConditions from "@/pages/terms-conditions";
 import CookiePolicy from "@/pages/cookie-policy";
 import News from "@/pages/news";
+import Learning from "@/pages/learning";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -28,6 +29,7 @@ function Router() {
       <Route path="/terms-conditions" component={TermsConditions} />
       <Route path="/cookie-policy" component={CookiePolicy} />
       <Route path="/news" component={News} />
+      <Route path="/learning" component={Learning} />
       <Route component={NotFound} />
     </Switch>
   );

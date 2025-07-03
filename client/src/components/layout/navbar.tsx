@@ -79,6 +79,12 @@ export default function Navbar() {
                   </div>
                 )}
               </div>
+              <Link 
+                href="/learning"
+                className={`px-3 py-2 text-sm font-medium transition-colors ${location === '/learning' ? 'text-primary' : 'text-gray-600 hover:text-primary'}`}
+              >
+                Learning
+              </Link>
               <button 
                 onClick={() => scrollToSection('testimonials')}
                 className="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
@@ -133,6 +139,13 @@ export default function Navbar() {
                       ))}
                     </div>
                   </div>
+                  <Link 
+                    href="/learning"
+                    onClick={() => setIsOpen(false)}
+                    className={`text-left px-3 py-2 text-lg font-medium transition-colors ${location === '/learning' ? 'text-primary' : 'text-gray-600 hover:text-primary'}`}
+                  >
+                    Learning
+                  </Link>
                   <button 
                     onClick={() => scrollToSection('testimonials')}
                     className="text-left text-gray-600 hover:text-primary px-3 py-2 text-lg font-medium transition-colors"
