@@ -118,14 +118,14 @@ export default function Contact() {
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Address</h3>
                       <p className="text-gray-600">
                         <a 
-                          href="https://www.google.com/maps/place/71-75+Shelton+St,+London+WC2H+9JQ,+UK" 
+                          href="https://maps.google.com/?q=Certacs+House,+10-12+Westgate,+Skelmersdale,+Lancashire,+WN8+8AZ" 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="hover:text-primary transition-colors"
                         >
-                          71-75 Shelton Street<br />
-                          Covent Garden, London WC2H 9JQ<br />
-                          United Kingdom
+                          Certacs House, 10-12 Westgate<br />
+                          Skelmersdale, Lancashire<br />
+                          WN8 8AZ
                         </a>
                       </p>
                     </div>
@@ -138,12 +138,12 @@ export default function Contact() {
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
                       <p className="text-gray-600">
-                        <a href="tel:+442072407391" className="hover:text-primary transition-colors">
-                          +44 (0) 207 240 7391
+                        <a href="tel:+441695363923" className="hover:text-primary transition-colors">
+                          +44(0)1695 363923
                         </a>
                         <br />
                         <a href="tel:+447459346514" className="hover:text-primary transition-colors">
-                          +44 (0) 745 934 6514
+                          +44(0) 7459346514
                         </a>
                       </p>
                     </div>
@@ -156,8 +156,8 @@ export default function Contact() {
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Email</h3>
                       <p className="text-gray-600">
-                        <a href="mailto:info@oysterworldwide.com" className="hover:text-primary transition-colors">
-                          info@oysterworldwide.com
+                        <a href="mailto:info@oysteremployment.com" className="hover:text-primary transition-colors">
+                          info@oysteremployment.com
                         </a>
                       </p>
                     </div>
@@ -168,11 +168,9 @@ export default function Contact() {
                       <Clock className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-1">Office Hours</h3>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-1">Opening Hours</h3>
                       <p className="text-gray-600">
-                        Monday - Friday: 9:00 AM - 6:00 PM<br />
-                        Saturday: 10:00 AM - 4:00 PM<br />
-                        Sunday: Closed
+                        Monday - Friday (9am - 6pm)
                       </p>
                     </div>
                   </div>
