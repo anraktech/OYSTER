@@ -155,6 +155,11 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - July 2, 2025: Created comprehensive Learning page with IELTS and OET course information, added to navigation menus
 - July 2, 2025: Updated Learning page hero section to match website theme with blue and yellow/orange gradients and animated background effects
 - July 2, 2025: Added comprehensive course structure, learning methodology, and course schedule sections to Learning page
+- July 3, 2025: Fixed white space issue above hero section on Learning page
+- July 3, 2025: Moved Learning page under Services dropdown after Health Sector in navigation
+- July 3, 2025: Reordered Learning page sections - moved "Why Choose Oyster WALS" before "Ready to Begin Your Learning Journey"
+- July 3, 2025: Created dedicated Contact page with same layout as home page contact section and Formspree integration
+- July 3, 2025: Added Contact page to main navigation replacing "Get Started" button
 
 ## Changelog
 

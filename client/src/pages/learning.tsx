@@ -9,7 +9,7 @@ export default function Learning() {
       <Navbar />
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white relative overflow-hidden">
+        <section className="pt-20 pb-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white relative overflow-hidden">
           {/* Background Effects */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-xl animate-pulse-slow"></div>
@@ -236,78 +236,7 @@ export default function Learning() {
           </div>
         </section>
 
-        {/* Why Oyster WALS Section */}
-        <section className="py-20 bg-gradient-to-br from-blue-900 to-purple-900 text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4">Why Choose Oyster WALS?</h2>
-              <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-                Oyster Worldwide Employment & Learning Services (WALS) stands out for exceptional results and comprehensive support.
-              </p>
-            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Medical Education Partners",
-                  description: "Experienced and medically focused educational partners, especially in OET preparation",
-                  icon: Award
-                },
-                {
-                  title: "Customised Course Structure",
-                  description: "Tailored specifically for doctors and nurses with healthcare-focused content",
-                  icon: Target
-                },
-                {
-                  title: "Practical Learning",
-                  description: "Real-world learning through scenarios, role plays, and video coaching",
-                  icon: Users
-                },
-                {
-                  title: "Progress Testing",
-                  description: "Regular progress testing to ensure continuous improvement and readiness",
-                  icon: CheckCircle
-                },
-                {
-                  title: "Expert Access",
-                  description: "Direct access to IELTS and OET experts, including former examiners",
-                  icon: GraduationCap
-                },
-                {
-                  title: "End-to-End Support",
-                  description: "Supportive admin and mentoring team for complete guidance throughout your journey",
-                  icon: BookOpen
-                }
-              ].map((feature, index) => (
-                <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 transition-all">
-                  <CardContent className="p-8 text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <feature.icon className="h-8 w-8 text-white" />
-                    </div>
-                    <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                    <p className="text-blue-100">{feature.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            <div className="mt-16 text-center">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-4">Your Trusted Partner</h3>
-                <p className="text-blue-100 mb-8">
-                  Partnering with Oyster WALS means joining a trusted, results-driven pathway for success in English proficiency exams.
-                </p>
-                <a 
-                  href="/#contact" 
-                  className="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-100 transition-colors shadow-lg"
-                >
-                  <BookOpen className="mr-2 h-5 w-5" />
-                  Get Started Today
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Course Structure Section */}
         <section className="py-20 bg-white">
@@ -605,6 +534,79 @@ export default function Learning() {
                 >
                   <BookOpen className="mr-2 h-5 w-5" />
                   Get Custom Quote
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Oyster WALS Section */}
+        <section className="py-20 bg-gradient-to-br from-blue-900 to-purple-900 text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-4">Why Choose Oyster WALS?</h2>
+              <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+                Oyster Worldwide Employment & Learning Services (WALS) stands out for exceptional results and comprehensive support.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "Medical Education Partners",
+                  description: "Experienced and medically focused educational partners, especially in OET preparation",
+                  icon: Award
+                },
+                {
+                  title: "Customised Course Structure",
+                  description: "Tailored specifically for doctors and nurses with healthcare-focused content",
+                  icon: Target
+                },
+                {
+                  title: "Practical Learning",
+                  description: "Real-world learning through scenarios, role plays, and video coaching",
+                  icon: Users
+                },
+                {
+                  title: "Progress Testing",
+                  description: "Regular progress testing to ensure continuous improvement and readiness",
+                  icon: CheckCircle
+                },
+                {
+                  title: "Expert Access",
+                  description: "Direct access to IELTS and OET experts, including former examiners",
+                  icon: GraduationCap
+                },
+                {
+                  title: "End-to-End Support",
+                  description: "Supportive admin and mentoring team for complete guidance throughout your journey",
+                  icon: BookOpen
+                }
+              ].map((feature, index) => (
+                <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 transition-all">
+                  <CardContent className="p-8 text-center">
+                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <feature.icon className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
+                    <p className="text-blue-100">{feature.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <div className="mt-16 text-center">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto">
+                <h3 className="text-2xl font-bold mb-4">Your Trusted Partner</h3>
+                <p className="text-blue-100 mb-8">
+                  Partnering with Oyster WALS means joining a trusted, results-driven pathway for success in English proficiency exams.
+                </p>
+                <a 
+                  href="/#contact" 
+                  className="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-100 transition-colors shadow-lg"
+                >
+                  <BookOpen className="mr-2 h-5 w-5" />
+                  Get Started Today
                 </a>
               </div>
             </div>

@@ -24,6 +24,7 @@ export default function Navbar() {
 
   const services = [
     { name: "Health Sector", href: "/health-sector" },
+    { name: "Learning", href: "/learning" },
     { name: "Information Technology", href: "/information-technology" },
     { name: "Engineering", href: "/engineering" },
     { name: "Hospitality", href: "/hospitality" },
@@ -79,24 +80,18 @@ export default function Navbar() {
                   </div>
                 )}
               </div>
-              <Link 
-                href="/learning"
-                className={`px-3 py-2 text-sm font-medium transition-colors ${location === '/learning' ? 'text-primary' : 'text-gray-600 hover:text-primary'}`}
-              >
-                Learning
-              </Link>
               <button 
                 onClick={() => scrollToSection('testimonials')}
                 className="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
               >
                 Testimonials
               </button>
-              <Button 
-                onClick={() => scrollToSection('contact')}
-                className="bg-primary text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors"
+              <Link 
+                href="/contact"
+                className="bg-primary text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors inline-flex items-center"
               >
-                Get Started
-              </Button>
+                Contact
+              </Link>
             </div>
           </div>
 
@@ -139,25 +134,19 @@ export default function Navbar() {
                       ))}
                     </div>
                   </div>
-                  <Link 
-                    href="/learning"
-                    onClick={() => setIsOpen(false)}
-                    className={`text-left px-3 py-2 text-lg font-medium transition-colors ${location === '/learning' ? 'text-primary' : 'text-gray-600 hover:text-primary'}`}
-                  >
-                    Learning
-                  </Link>
                   <button 
                     onClick={() => scrollToSection('testimonials')}
                     className="text-left text-gray-600 hover:text-primary px-3 py-2 text-lg font-medium transition-colors"
                   >
                     Testimonials
                   </button>
-                  <Button 
-                    onClick={() => scrollToSection('contact')}
-                    className="bg-primary text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-blue-700 transition-colors w-full"
+                  <Link 
+                    href="/contact"
+                    onClick={() => setIsOpen(false)}
+                    className="bg-primary text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-blue-700 transition-colors w-full text-center inline-block"
                   >
-                    Get Started
-                  </Button>
+                    Contact
+                  </Link>
                 </div>
               </SheetContent>
             </Sheet>
