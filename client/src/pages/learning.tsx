@@ -551,9 +551,7 @@ export default function Learning() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-4">Why Choose Oyster WELS?</h2>
-              <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-                Oyster Worldwide Employment & Learning Services (WALS) stands out for exceptional results and comprehensive support.
-              </p>
+              <p className="text-xl text-blue-100 max-w-3xl mx-auto">Oyster Worldwide Employment & Learning Services (WELS) stands out for exceptional results and comprehensive support.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
