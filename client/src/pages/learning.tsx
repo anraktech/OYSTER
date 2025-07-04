@@ -602,9 +602,7 @@ export default function Learning() {
             <div className="mt-16 text-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-4xl mx-auto">
                 <h3 className="text-2xl font-bold mb-4">Your Trusted Partner</h3>
-                <p className="text-blue-100 mb-8">
-                  Partnering with Oyster WALS means joining a trusted, results-driven pathway for success in English proficiency exams.
-                </p>
+                <p className="text-blue-100 mb-8">Partnering with Oyster WELS means joining a trusted, results-driven pathway for success in English proficiency exams.</p>
                 <a 
                   href="/contact" 
                   className="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-100 transition-colors shadow-lg"
