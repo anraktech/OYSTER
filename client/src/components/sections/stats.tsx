@@ -29,7 +29,7 @@ export default function Stats() {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">Our Impact</h2>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-            Delivering excellence through specialized expertise and dedicated service
+            Delivering excellence through specialised expertise and dedicated service
           </p>
         </div>
 

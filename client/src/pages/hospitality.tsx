@@ -68,7 +68,7 @@ export default function Hospitality() {
               <div>
                 <h1 className="text-5xl font-bold mb-6">Creating Exceptional Hospitality Experiences</h1>
                 <p className="text-xl text-blue-100 mb-8">
-                  We recognize the vast potential within the hospitality industry. Many talented professionals find themselves in roles that underutilize their hospitality qualifications - we're here to change that.
+                  We recognise the vast potential within the hospitality industry. Many talented professionals find themselves in roles that underutilize their hospitality qualifications - we're here to change that.
                 </p>
                 <Button 
                   onClick={scrollToContact}
@@ -122,7 +122,7 @@ export default function Hospitality() {
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Hospitality Specialties We Excel In</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Hospitality Specialities We Excel In</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 From culinary arts to event management, we connect talented hospitality professionals with establishments that value excellence.
               </p>

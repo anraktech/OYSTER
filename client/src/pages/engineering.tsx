@@ -121,7 +121,7 @@ export default function Engineering() {
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Engineering Specialties We Support</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Engineering Specialities We Support</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 From traditional engineering disciplines to cutting-edge technology fields, we connect talented engineers with their ideal roles.
               </p>

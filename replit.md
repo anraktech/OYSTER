@@ -167,6 +167,8 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - July 3, 2025: Updated "Start Learning" button on health sector page to redirect to /learning instead of /contact
 - July 3, 2025: Fixed all contact information on Contact page to match the "Get in Touch" section exactly (address, phone numbers, email, opening hours)
 - July 3, 2025: Added new testimonial for Kapil, an Indian accountant, with positive review highlighting professional qualification recognition and exceptional service
+- July 3, 2025: Updated all instances of "specialized" to "specialised" and "recognized" to "recognised" throughout the website for consistent British spelling
+- July 3, 2025: Fixed footer contact link to redirect to /contact page instead of /#contact
 
 ## Changelog
 

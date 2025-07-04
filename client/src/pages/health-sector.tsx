@@ -9,11 +9,11 @@ const requirements = [
   {
     title: "OET (Occupational English Test)",
     description: "English language proficiency exam designed specifically for medical professionals seeking UK opportunities",
-    fullDescription: "The OET is now officially recognized by the Nursing and Midwifery Council (NMC) as of November 1, 2017, and by the General Medical Council (GMC) as of February 6, 2018. This exam is tailored for healthcare professionals and reflects real workplace scenarios.",
+    fullDescription: "The OET is now officially recognised by the Nursing and Midwifery Council (NMC) as of November 1, 2017, and by the General Medical Council (GMC) as of February 6, 2018. This exam is tailored for healthcare professionals and reflects real workplace scenarios.",
     requirements: [
       "Grade B in Reading, Listening, and Speaking",
       "Grade C+ or higher in Writing",
-      "Officially recognized by NMC and GMC",
+      "Officially recognised by NMC and GMC",
       "Designed specifically for healthcare contexts"
     ],
     color: "bg-blue-50 border-blue-200",
@@ -44,8 +44,8 @@ const faqData = [
     answer: "OET is specifically designed for medical professionals and uses healthcare-related scenarios and vocabulary. IELTS is a general English proficiency test used worldwide. Both are accepted by UK healthcare regulatory bodies, so you can choose the one that best suits your preparation style."
   },
   {
-    question: "When were OET scores officially recognized in the UK?",
-    answer: "The Nursing and Midwifery Council (NMC) officially recognized OET on November 1, 2017, and the General Medical Council (GMC) recognized it on February 6, 2018. This recognition applies to nurses and doctors educated and trained worldwide."
+    question: "When were OET scores officially recognised in the UK?",
+    answer: "The Nursing and Midwifery Council (NMC) officially recognised OET on November 1, 2017, and the General Medical Council (GMC) recognised it on February 6, 2018. This recognition applies to nurses and doctors educated and trained worldwide."
   },
   {
     question: "Can I choose between IELTS Academic and General Training?",

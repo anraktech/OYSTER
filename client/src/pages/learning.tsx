@@ -313,7 +313,7 @@ export default function Learning() {
 
                   <div className="space-y-6">
                     <div>
-                      <h4 className="text-xl font-bold text-gray-900 mb-4">Specialized Modules</h4>
+                      <h4 className="text-xl font-bold text-gray-900 mb-4">Specialised Modules</h4>
                       <div className="space-y-3">
                         {[
                           "Medical Terminology & Vocabulary",

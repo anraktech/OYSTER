@@ -11,7 +11,7 @@ export default function Footer() {
               <h3 className="text-2xl font-bold">Oyster Employment & Learning</h3>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              Creating opportunities and unlocking success in specialized fields. Your trusted partner for career growth and talent acquisition.
+              Creating opportunities and unlocking success in specialised fields. Your trusted partner for career growth and talent acquisition.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
@@ -41,7 +41,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
               <li><a href="/learning" className="text-gray-400 hover:text-white transition-colors">Learning</a></li>
-              <li><a href="/#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+              <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
               <li><a href="/news" className="text-gray-400 hover:text-white transition-colors">Latest News</a></li>
               <li><a href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
             </ul>
