@@ -170,6 +170,7 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - July 3, 2025: Updated all instances of "specialized" to "specialised" and "recognized" to "recognised" throughout the website for consistent British spelling
 - July 3, 2025: Fixed footer contact link to redirect to /contact page instead of /#contact
 - July 3, 2025: Updated Google Maps links to use directions API for routing instead of just showing location on both contact section and contact page
+- July 3, 2025: Reorganized footer navigation - moved Learning from Company section to Services section and positioned it after Health Sector
 
 ## Changelog
 
