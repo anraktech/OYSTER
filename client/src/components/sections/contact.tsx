@@ -80,7 +80,7 @@ export default function Contact() {
                     WN8 8AZ
                   </div>
                   <a 
-                    href="https://maps.google.com/?q=Certacs+House,+10-12+Westgate,+Skelmersdale,+Lancashire,+WN8+8AZ" 
+                    href="https://www.google.com/maps/dir/?api=1&destination=Certacs+House,+10-12+Westgate,+Skelmersdale,+Lancashire,+WN8+8AZ" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-primary hover:text-blue-600 text-sm mt-2 font-medium"

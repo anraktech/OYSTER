@@ -118,7 +118,7 @@ export default function Contact() {
                       <h3 className="text-lg font-semibold text-gray-900 mb-1">Address</h3>
                       <p className="text-gray-600">
                         <a 
-                          href="https://maps.google.com/?q=Certacs+House,+10-12+Westgate,+Skelmersdale,+Lancashire,+WN8+8AZ" 
+                          href="https://www.google.com/maps/dir/?api=1&destination=Certacs+House,+10-12+Westgate,+Skelmersdale,+Lancashire,+WN8+8AZ" 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="hover:text-primary transition-colors"
