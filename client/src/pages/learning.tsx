@@ -550,7 +550,7 @@ export default function Learning() {
         <section className="py-20 bg-gradient-to-br from-blue-900 to-purple-900 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4">Why Choose Oyster WALS?</h2>
+              <h2 className="text-4xl font-bold mb-4">Why Choose Oyster WELS?</h2>
               <p className="text-xl text-blue-100 max-w-3xl mx-auto">
                 Oyster Worldwide Employment & Learning Services (WALS) stands out for exceptional results and comprehensive support.
               </p>
