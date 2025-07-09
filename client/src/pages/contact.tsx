@@ -265,7 +265,7 @@ export default function Contact() {
                           <SelectItem value="engineering">Engineering</SelectItem>
                           <SelectItem value="it">Information Technology</SelectItem>
                           <SelectItem value="hospitality">Hospitality</SelectItem>
-                          <SelectItem value="learning">Language Learning</SelectItem>
+                          <SelectItem value="learning">Learning</SelectItem>
                           <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
                       </Select>

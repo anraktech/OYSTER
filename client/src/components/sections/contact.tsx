@@ -199,6 +199,7 @@ export default function Contact() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="health">Health Sector</SelectItem>
+                      <SelectItem value="learning">Learning</SelectItem>
                       <SelectItem value="engineering">Engineering</SelectItem>
                       <SelectItem value="it">Information Technology</SelectItem>
                       <SelectItem value="hospitality">Hospitality</SelectItem>
