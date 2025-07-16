@@ -173,6 +173,7 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - July 3, 2025: Reorganized footer navigation - moved Learning from Company section to Services section and positioned it after Health Sector
 - July 8, 2025: Updated testimonials: hidden Rosa and Saba testimonials, renamed Nidhi to Kapil, renamed Kapil to Azeem (Pakistani)
 - July 8, 2025: Added Learning option to home page contact form dropdown and changed "Language Learning" to "Learning" in contact page dropdown
+- July 16, 2025: Added employment-themed favicon (briefcase icon) to website with both SVG and ICO formats for cross-browser compatibility
 
 ## Changelog
 
