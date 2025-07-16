@@ -21,7 +21,7 @@ export default function News() {
             <CardContent className="p-8">
               <div className="flex items-center mb-6 text-gray-600">
                 <Calendar className="h-5 w-5 mr-2" />
-                <span className="mr-4">May 27, 2022</span>
+                <span className="mr-4">May 27, 2020</span>
                 <User className="h-5 w-5 mr-2" />
                 <span>Oyster Employment Team</span>
               </div>
