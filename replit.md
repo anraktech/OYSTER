@@ -178,6 +178,7 @@ This is a modern full-stack web application for Oyster Employment, a recruitment
 - August 10, 2025: Added three Muslim testimonials (Fatima from Pakistan, Aisha and Zainab from India) showcasing UAE and Saudi Arabia placements with culturally appropriate language
 - August 10, 2025: Added "Leave Us A Review!" link in footer (highlighted in yellow) linking to new review submission page
 - August 10, 2025: Created comprehensive review page (/give-review) with interactive 5-star rating system, elegant design, animated background, and form validation
+- August 10, 2025: Removed religious phrases (Mashallah, SubhanAllah, Alhamdulillah) from Muslim testimonials, shuffled all testimonials order, and changed Adebayo to Rahman (Bangladeshi civil engineer)
 
 ## Changelog
 

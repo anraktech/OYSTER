@@ -4,25 +4,11 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const testimonials = [
   {
-    name: "Mario",
+    name: "Fatima",
     role: "Nurse",
-    nationality: "Filipino",
-    image: "",
-    content: "Coming from the Gulf country as a nurse, Oyster Employment made my UK journey seamless. Their support from visa assistance to finding the perfect hospital placement was exceptional. I'm now working in my dream role!"
-  },
-  {
-    name: "Adebayo",
-    role: "Civil Engineer",
-    nationality: "Nigerian",
-    image: "",
-    content: "From Nigeria to the UK, Oyster Employment made my engineering career transition smooth and successful. Their team understood my aspirations and connected me with an excellent engineering firm. Truly grateful!"
-  },
-  {
-    name: "Zoya",
-    role: "Healthcare",
     nationality: "Pakistani",
     image: "",
-    content: "Coming from Pakistan as a healthcare professional, I was excited but nervous about working in the UK healthcare system. Oyster Employment made the transition seamless, helping with registration and finding the perfect healthcare position. Their support was invaluable throughout my journey."
+    content: "Oyster Employment opened doors I never imagined possible. From Pakistan, they helped me secure a wonderful nursing position in Dubai, UAE. The entire process was handled with such care and professionalism. They understood my cultural needs and made my transition to the Middle East smooth and comfortable. Truly blessed to have found them!"
   },
   {
     name: "Kapil",
@@ -32,25 +18,25 @@ const testimonials = [
     content: "Excellent recruitment agency to land your dream job. I would absolutely recommend it. Plus they provide learning resources as well!"
   },
   {
-    name: "Raj",
-    role: "Chef",
-    nationality: "Indian",
+    name: "Rahman",
+    role: "Civil Engineer",
+    nationality: "Bangladeshi",
     image: "",
-    content: "Coming from Mumbai, I was uncertain about relocating to the UK for work. Oyster Employment not only found me a great chef position but also helped with accommodation and settling in. Outstanding service!"
+    content: "From Bangladesh to the UK, Oyster Employment made my engineering career transition smooth and successful. Their team understood my aspirations and connected me with an excellent engineering firm. Truly grateful!"
   },
   {
-    name: "Michael",
-    role: "Data Analyst",
+    name: "Zainab",
+    role: "Medical Technician",
     nationality: "Indian",
     image: "",
-    content: "Professional service with genuine care for finding the right fit. They understood my career goals and matched me perfectly with a tech company that values innovation."
+    content: "Oyster Employment exceeded all my expectations. From Mumbai to Abu Dhabi, they guided me every step of the way. Finding a work environment that respects my values was important to me, and they found the perfect medical facility in the UAE. Their dedication to helping professionals is truly commendable. Thank you so much!"
   },
   {
-    name: "Priya",
+    name: "Mario",
     role: "Nurse",
-    nationality: "Indian",
+    nationality: "Filipino",
     image: "",
-    content: "Being from India, I was worried about the visa process and finding a good nursing role in the UK. Oyster Employment handled everything professionally and found me a perfect position that matches my skills and career goals."
+    content: "Coming from the Gulf country as a nurse, Oyster Employment made my UK journey seamless. Their support from visa assistance to finding the perfect hospital placement was exceptional. I'm now working in my dream role!"
   },
   {
     name: "Azeem",
@@ -60,25 +46,39 @@ const testimonials = [
     content: "Moving from Pakistan to pursue my accounting career in the UK felt overwhelming, but Oyster Employment made it effortless! They found me an excellent position at a prestigious accounting firm, handled all the paperwork, and even helped with professional qualification recognition. Their attention to detail and genuine care for my success exceeded all expectations. Absolutely exceptional service!"
   },
   {
-    name: "Fatima",
-    role: "Nurse",
-    nationality: "Pakistani",
-    image: "",
-    content: "Alhamdulillah! Oyster Employment opened doors I never imagined possible. From Pakistan, they helped me secure a wonderful nursing position in Dubai, UAE. The entire process was handled with such care and professionalism. They understood my cultural needs and made my transition to the Middle East smooth and comfortable. Truly blessed to have found them!"
-  },
-  {
     name: "Aisha",
     role: "Healthcare Professional",
     nationality: "Indian",
     image: "",
-    content: "SubhanAllah! Coming from India, I dreamed of working in Saudi Arabia's growing healthcare sector. Oyster Employment made this dream a reality by securing me an excellent position in Riyadh. Their team was incredibly supportive throughout the visa process and helped me understand the cultural aspects of working in the Kingdom. May Allah bless their efforts!"
+    content: "Coming from India, I dreamed of working in Saudi Arabia's growing healthcare sector. Oyster Employment made this dream a reality by securing me an excellent position in Riyadh. Their team was incredibly supportive throughout the visa process and helped me understand the cultural aspects of working in the Kingdom. Wonderful service!"
   },
   {
-    name: "Zainab",
-    role: "Medical Technician",
+    name: "Priya",
+    role: "Nurse",
     nationality: "Indian",
     image: "",
-    content: "Mashallah! Oyster Employment exceeded all my expectations. From Mumbai to Abu Dhabi, they guided me every step of the way. Finding a halal work environment that respects my values was important to me, and they found the perfect medical facility in the UAE. Their dedication to helping Muslim professionals is truly commendable. Jazakallahu khayran!"
+    content: "Being from India, I was worried about the visa process and finding a good nursing role in the UK. Oyster Employment handled everything professionally and found me a perfect position that matches my skills and career goals."
+  },
+  {
+    name: "Raj",
+    role: "Chef",
+    nationality: "Indian",
+    image: "",
+    content: "Coming from Mumbai, I was uncertain about relocating to the UK for work. Oyster Employment not only found me a great chef position but also helped with accommodation and settling in. Outstanding service!"
+  },
+  {
+    name: "Zoya",
+    role: "Healthcare",
+    nationality: "Pakistani",
+    image: "",
+    content: "Coming from Pakistan as a healthcare professional, I was excited but nervous about working in the UK healthcare system. Oyster Employment made the transition seamless, helping with registration and finding the perfect healthcare position. Their support was invaluable throughout my journey."
+  },
+  {
+    name: "Michael",
+    role: "Data Analyst",
+    nationality: "Indian",
+    image: "",
+    content: "Professional service with genuine care for finding the right fit. They understood my career goals and matched me perfectly with a tech company that values innovation."
   }
 ];
 
