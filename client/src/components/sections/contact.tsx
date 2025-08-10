@@ -119,7 +119,10 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <div className="font-semibold text-gray-900">Opening Hours</div>
-                  <div className="text-gray-600">Monday - Friday (9am - 6pm)</div>
+                  <div className="text-gray-600">
+                    Monday - Friday (9am - 6pm)<br/>
+                    Saturday (10am - 3pm)
+                  </div>
                 </div>
               </div>
             </div>

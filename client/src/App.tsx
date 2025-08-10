@@ -15,6 +15,7 @@ import CookiePolicy from "@/pages/cookie-policy";
 import News from "@/pages/news";
 import Learning from "@/pages/learning";
 import Contact from "@/pages/contact";
+import GiveReview from "@/pages/give-review";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -32,6 +33,7 @@ function Router() {
       <Route path="/news" component={News} />
       <Route path="/learning" component={Learning} />
       <Route path="/contact" component={Contact} />
+      <Route path="/give-review" component={GiveReview} />
       <Route component={NotFound} />
     </Switch>
   );

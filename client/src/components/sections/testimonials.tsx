@@ -58,6 +58,27 @@ const testimonials = [
     nationality: "Pakistani",
     image: "",
     content: "Moving from Pakistan to pursue my accounting career in the UK felt overwhelming, but Oyster Employment made it effortless! They found me an excellent position at a prestigious accounting firm, handled all the paperwork, and even helped with professional qualification recognition. Their attention to detail and genuine care for my success exceeded all expectations. Absolutely exceptional service!"
+  },
+  {
+    name: "Fatima",
+    role: "Nurse",
+    nationality: "Pakistani",
+    image: "",
+    content: "Alhamdulillah! Oyster Employment opened doors I never imagined possible. From Pakistan, they helped me secure a wonderful nursing position in Dubai, UAE. The entire process was handled with such care and professionalism. They understood my cultural needs and made my transition to the Middle East smooth and comfortable. Truly blessed to have found them!"
+  },
+  {
+    name: "Aisha",
+    role: "Healthcare Professional",
+    nationality: "Indian",
+    image: "",
+    content: "SubhanAllah! Coming from India, I dreamed of working in Saudi Arabia's growing healthcare sector. Oyster Employment made this dream a reality by securing me an excellent position in Riyadh. Their team was incredibly supportive throughout the visa process and helped me understand the cultural aspects of working in the Kingdom. May Allah bless their efforts!"
+  },
+  {
+    name: "Zainab",
+    role: "Medical Technician",
+    nationality: "Indian",
+    image: "",
+    content: "Mashallah! Oyster Employment exceeded all my expectations. From Mumbai to Abu Dhabi, they guided me every step of the way. Finding a halal work environment that respects my values was important to me, and they found the perfect medical facility in the UAE. Their dedication to helping Muslim professionals is truly commendable. Jazakallahu khayran!"
   }
 ];
 
