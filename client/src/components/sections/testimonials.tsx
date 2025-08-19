@@ -4,7 +4,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const testimonials = [
   {
-    name: "Fatima",
+    name: "Saba",
     role: "Nurse",
     nationality: "Pakistani",
     image: "",
@@ -18,14 +18,14 @@ const testimonials = [
     content: "Excellent recruitment agency to land your dream job. I would absolutely recommend it. Plus they provide learning resources as well!"
   },
   {
-    name: "Rahman",
+    name: "Nadeem",
     role: "Civil Engineer",
     nationality: "Bangladeshi",
     image: "",
     content: "From Bangladesh to the UK, Oyster Employment made my engineering career transition smooth and successful. Their team understood my aspirations and connected me with an excellent engineering firm. Truly grateful!"
   },
   {
-    name: "Zainab",
+    name: "Sravya",
     role: "Medical Technician",
     nationality: "Indian",
     image: "",
@@ -46,7 +46,7 @@ const testimonials = [
     content: "Moving from Pakistan to pursue my accounting career in the UK felt overwhelming, but Oyster Employment made it effortless! They found me an excellent position at a prestigious accounting firm, handled all the paperwork, and even helped with professional qualification recognition. Their attention to detail and genuine care for my success exceeded all expectations. Absolutely exceptional service!"
   },
   {
-    name: "Aisha",
+    name: "Preet",
     role: "Healthcare Professional",
     nationality: "Indian",
     image: "",
