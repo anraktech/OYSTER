@@ -583,9 +583,12 @@ export default function Blog() {
                     <Button 
                       className="w-full bg-primary hover:bg-primary/90 text-white group/btn"
                       onClick={() => {
-                        // Create a modal or expand the content
                         const modal = document.getElementById(`modal-${post.id}`);
-                        if (modal) modal.classList.remove('hidden');
+                        if (modal) {
+                          modal.classList.remove('hidden');
+                          document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                          modal.scrollTop = 0; // Scroll to top of modal
+                        }
                       }}
                     >
                       Read Full Article
@@ -595,63 +598,170 @@ export default function Blog() {
                 </CardContent>
 
                 {/* Full Article Modal */}
-                <div id={`modal-${post.id}`} className="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-                  <div className="bg-white rounded-xl max-w-4xl max-h-[90vh] overflow-auto">
-                    <div className="sticky top-0 bg-white border-b p-4 flex justify-between items-center">
-                      <h2 className="text-xl font-bold text-primary">{post.title}</h2>
-                      <Button 
-                        variant="ghost" 
-                        className="text-gray-500 hover:text-gray-700"
+                <div id={`modal-${post.id}`} className="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 overflow-y-auto">
+                  <div className="min-h-screen flex items-start justify-center p-4 pt-12">
+                    <div className="bg-white rounded-2xl max-w-5xl w-full shadow-2xl border-0 overflow-hidden relative animate-fade-in">
+                      {/* Close Button - Fixed Position */}
+                      <button
+                        className="fixed top-6 right-6 z-60 bg-white/90 backdrop-blur-sm hover:bg-white text-gray-700 hover:text-gray-900 w-12 h-12 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center border border-gray-200"
                         onClick={() => {
                           document.getElementById(`modal-${post.id}`)?.classList.add('hidden');
+                          document.body.style.overflow = 'unset';
                         }}
                       >
-                        ✕
-                      </Button>
-                    </div>
-                    
-                    <div className="p-6">
-                      <img 
-                        src={post.image} 
-                        alt={post.title}
-                        className="w-full h-64 object-cover rounded-lg mb-6"
-                      />
-                      
-                      <div className="flex items-center gap-4 text-sm text-gray-600 mb-6">
-                        <Badge className={`${
-                          post.category === 'Healthcare' ? 'bg-green-500' :
-                          post.category === 'Engineering' ? 'bg-blue-500' :
-                          post.category === 'Hospitality' ? 'bg-purple-500' :
-                          post.category === 'Technology' ? 'bg-indigo-500' :
-                          post.category === 'Immigration' ? 'bg-orange-500' :
-                          post.category === 'Regions' ? 'bg-teal-500' :
-                          post.category === 'Qualifications' ? 'bg-cyan-500' :
-                          post.category === 'Career' ? 'bg-pink-500' :
-                          post.category === 'Integration' ? 'bg-amber-500' :
-                          'bg-slate-500'
-                        } text-white border-0`}>
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      </button>
+
+                      {/* Hero Image */}
+                      <div className="relative h-80 overflow-hidden">
+                        <img 
+                          src={post.image} 
+                          alt={post.title}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                        
+                        {/* Category Badge on Image */}
+                        <Badge className={`absolute top-6 left-6 ${
+                          post.category === 'Healthcare' ? 'bg-green-500 hover:bg-green-600' :
+                          post.category === 'Engineering' ? 'bg-blue-500 hover:bg-blue-600' :
+                          post.category === 'Hospitality' ? 'bg-purple-500 hover:bg-purple-600' :
+                          post.category === 'Technology' ? 'bg-indigo-500 hover:bg-indigo-600' :
+                          post.category === 'Immigration' ? 'bg-orange-500 hover:bg-orange-600' :
+                          post.category === 'Regions' ? 'bg-teal-500 hover:bg-teal-600' :
+                          post.category === 'Qualifications' ? 'bg-cyan-500 hover:bg-cyan-600' :
+                          post.category === 'Career' ? 'bg-pink-500 hover:bg-pink-600' :
+                          post.category === 'Integration' ? 'bg-amber-500 hover:bg-amber-600' :
+                          'bg-slate-500 hover:bg-slate-600'
+                        } text-white border-0 text-sm px-3 py-1`}>
                           {post.category}
                         </Badge>
-                        <div className="flex items-center gap-1">
-                          <User className="w-4 h-4" />
-                          <span>{post.author}</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <Calendar className="w-4 h-4" />
-                          <span>{new Date(post.date).toLocaleDateString('en-GB')}</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <Clock className="w-4 h-4" />
-                          <span>{post.readTime}</span>
-                        </div>
                       </div>
-                      
-                      <div className="prose prose-lg max-w-none">
-                        {post.content.split('\n\n').map((paragraph, index) => (
-                          <p key={index} className="mb-4 text-gray-700 leading-relaxed">
-                            {paragraph}
+
+                      {/* Article Content */}
+                      <div className="px-8 py-8">
+                        {/* Article Header */}
+                        <header className="mb-8">
+                          <h1 className="text-3xl lg:text-4xl font-bold text-primary mb-4 leading-tight">
+                            {post.title}
+                          </h1>
+                          
+                          <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                            {post.excerpt}
                           </p>
-                        ))}
+
+                          {/* Author & Meta Info */}
+                          <div className="flex flex-wrap items-center gap-6 text-sm text-gray-500 border-b border-gray-200 pb-6">
+                            <div className="flex items-center gap-2">
+                              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                                <User className="w-4 h-4 text-white" />
+                              </div>
+                              <div>
+                                <span className="font-medium text-gray-700">By {post.author}</span>
+                              </div>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <Calendar className="w-4 h-4" />
+                              <span>{new Date(post.date).toLocaleDateString('en-GB', { 
+                                year: 'numeric', 
+                                month: 'long', 
+                                day: 'numeric' 
+                              })}</span>
+                            </div>
+                            <div className="flex items-center gap-1">
+                              <Clock className="w-4 h-4" />
+                              <span>{post.readTime}</span>
+                            </div>
+                          </div>
+                        </header>
+
+                        {/* Article Body */}
+                        <article className="prose prose-lg max-w-none">
+                          {post.content.split('\n\n').map((paragraph, index) => {
+                            // Handle bullet points
+                            if (paragraph.trim().startsWith('•')) {
+                              const items = paragraph.split('\n').filter(item => item.trim().startsWith('•'));
+                              return (
+                                <ul key={index} className="my-6 space-y-2">
+                                  {items.map((item, itemIndex) => (
+                                    <li key={itemIndex} className="text-gray-700 leading-relaxed">
+                                      {item.replace('•', '').trim()}
+                                    </li>
+                                  ))}
+                                </ul>
+                              );
+                            }
+                            
+                            // Handle section headers (lines that end with colon)
+                            if (paragraph.trim().endsWith(':') && paragraph.length < 100) {
+                              return (
+                                <h3 key={index} className="text-xl font-bold text-primary mt-8 mb-4">
+                                  {paragraph.replace(':', '')}
+                                </h3>
+                              );
+                            }
+
+                            // Handle success/challenge boxes
+                            if (paragraph.includes('✓') || paragraph.includes('❌')) {
+                              const lines = paragraph.split('\n');
+                              return (
+                                <div key={index} className="my-6 space-y-3">
+                                  {lines.map((line, lineIndex) => {
+                                    if (line.includes('✓')) {
+                                      return (
+                                        <div key={lineIndex} className="flex items-start gap-3 p-3 bg-green-50 border-l-4 border-green-500 rounded-r-lg">
+                                          <span className="text-green-600 font-bold">✓</span>
+                                          <span className="text-green-800">{line.replace('✓', '').trim()}</span>
+                                        </div>
+                                      );
+                                    }
+                                    if (line.includes('❌')) {
+                                      return (
+                                        <div key={lineIndex} className="flex items-start gap-3 p-3 bg-red-50 border-l-4 border-red-500 rounded-r-lg">
+                                          <span className="text-red-600 font-bold">❌</span>
+                                          <span className="text-red-800">{line.replace('❌', '').trim()}</span>
+                                        </div>
+                                      );
+                                    }
+                                    return null;
+                                  })}
+                                </div>
+                              );
+                            }
+
+                            // Regular paragraphs
+                            return (
+                              <p key={index} className="mb-6 text-gray-700 leading-relaxed text-lg">
+                                {paragraph}
+                              </p>
+                            );
+                          })}
+                        </article>
+
+                        {/* Call to Action */}
+                        <div className="mt-12 pt-8 border-t border-gray-200">
+                          <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl p-8 text-center">
+                            <h3 className="text-2xl font-bold text-primary mb-4">
+                              Ready to Start Your UK Career Journey?
+                            </h3>
+                            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+                              Get personalized guidance from our recruitment experts and take the first step towards your UK employment success.
+                            </p>
+                            <Button 
+                              className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+                              onClick={() => {
+                                document.getElementById(`modal-${post.id}`)?.classList.add('hidden');
+                                document.body.style.overflow = 'unset';
+                                window.location.href = '/contact';
+                              }}
+                            >
+                              Get Expert Consultation
+                              <ArrowRight className="ml-2 h-5 w-5" />
+                            </Button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
