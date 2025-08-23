@@ -16,6 +16,7 @@ import News from "@/pages/news";
 import Learning from "@/pages/learning";
 import Contact from "@/pages/contact";
 import GiveReview from "@/pages/give-review";
+import Blog from "@/pages/blog";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -34,6 +35,7 @@ function Router() {
       <Route path="/learning" component={Learning} />
       <Route path="/contact" component={Contact} />
       <Route path="/give-review" component={GiveReview} />
+      <Route path="/blog" component={Blog} />
       <Route component={NotFound} />
     </Switch>
   );
