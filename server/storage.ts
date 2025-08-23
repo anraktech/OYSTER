@@ -1,4 +1,8 @@
 import { users, contacts, type User, type InsertUser, type Contact, type InsertContact } from "@shared/schema";
+import pkg from 'pg';
+const { Pool } = pkg;
+import { drizzle } from "drizzle-orm/node-postgres";
+import { eq } from "drizzle-orm";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -59,4 +63,46 @@ export class MemStorage implements IStorage {
   }
 }
 
-export const storage = new MemStorage();
+export class DatabaseStorage implements IStorage {
+  private db: ReturnType<typeof drizzle>;
+
+  constructor() {
+    if (!process.env.DATABASE_URL) {
+      throw new Error("DATABASE_URL environment variable is required");
+    }
+    
+    const pool = new Pool({
+      connectionString: process.env.DATABASE_URL,
+      ssl: process.env.NODE_ENV === "production" ? { rejectUnauthorized: false } : false,
+    });
+    
+    this.db = drizzle(pool);
+  }
+
+  async getUser(id: number): Promise<User | undefined> {
+    const result = await this.db.select().from(users).where(eq(users.id, id)).limit(1);
+    return result[0];
+  }
+
+  async getUserByUsername(username: string): Promise<User | undefined> {
+    const result = await this.db.select().from(users).where(eq(users.username, username)).limit(1);
+    return result[0];
+  }
+
+  async createUser(insertUser: InsertUser): Promise<User> {
+    const result = await this.db.insert(users).values(insertUser).returning();
+    return result[0];
+  }
+
+  async createContact(insertContact: InsertContact): Promise<Contact> {
+    const result = await this.db.insert(contacts).values(insertContact).returning();
+    return result[0];
+  }
+
+  async getContacts(): Promise<Contact[]> {
+    return await this.db.select().from(contacts).orderBy(contacts.createdAt);
+  }
+}
+
+// Use database storage if DATABASE_URL is provided, otherwise fall back to memory storage
+export const storage = process.env.DATABASE_URL ? new DatabaseStorage() : new MemStorage();
