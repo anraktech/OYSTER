@@ -770,13 +770,12 @@ export default function Blog() {
                       </p>
                       
                       <Button 
-                        className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-10 py-4 rounded-full text-xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-2 border-primary/20 group"
+                        className="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-full text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-0 group"
                         onClick={() => {
                           closeModal();
                           window.location.href = '/contact';
                         }}
                       >
-                        <span className="mr-2 text-xl">🎯</span>
                         Get Expert Consultation
                         <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform duration-300" />
                       </Button>
@@ -826,12 +825,11 @@ export default function Blog() {
           {/* Enhanced CTA Button */}
           <div className="animate-slide-up">
             <Button 
-              className="bg-accent text-primary px-12 py-6 rounded-full text-xl font-bold hover:bg-yellow-400 transition-all duration-300 transform hover:scale-110 shadow-2xl hover:shadow-3xl border-4 border-accent/20 hover:border-yellow-400/30 backdrop-blur-sm group"
+              className="bg-accent text-white px-12 py-6 rounded-full text-xl font-semibold hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl border-0 group"
               onClick={() => window.location.href = '/contact'}
             >
-              <span className="mr-3 text-2xl">🚀</span>
               Get Expert Consultation
-              <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform duration-300" />
+              <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>
             
             {/* Additional trust indicators */}
