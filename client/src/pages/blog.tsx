@@ -3,6 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, User, ArrowRight, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
 
 const blogPosts = [
   {
@@ -511,6 +513,7 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-orange-50">
+      <Navbar />
       {/* Hero Section */}
       <section className="gradient-bg text-white py-20 relative overflow-hidden">
         {/* Animated Background Elements */}
@@ -750,23 +753,50 @@ export default function Blog() {
 
                 {/* Call to Action */}
                 <div className="mt-12 pt-8 border-t border-gray-200">
-                  <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl p-8 text-center">
-                    <h3 className="text-2xl font-bold text-primary mb-4">
-                      Ready to Start Your UK Career Journey?
-                    </h3>
-                    <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                      Get personalized guidance from our recruitment experts and take the first step towards your UK employment success.
-                    </p>
-                    <Button 
-                      className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
-                      onClick={() => {
-                        closeModal();
-                        window.location.href = '/contact';
-                      }}
-                    >
-                      Get Expert Consultation
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Button>
+                  <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-10 text-center relative overflow-hidden">
+                    {/* Background decoration */}
+                    <div className="absolute inset-0 opacity-5">
+                      <div className="absolute top-4 left-4 w-8 h-8 bg-primary rounded-full"></div>
+                      <div className="absolute bottom-4 right-4 w-6 h-6 bg-accent rounded-full"></div>
+                      <div className="absolute top-8 right-8 w-4 h-4 bg-primary rounded-full"></div>
+                    </div>
+                    
+                    <div className="relative z-10">
+                      <h3 className="text-3xl font-bold text-primary mb-6">
+                        Ready to Start Your UK Career Journey?
+                      </h3>
+                      <p className="text-gray-600 mb-8 max-w-2xl mx-auto text-lg leading-relaxed">
+                        Get personalized guidance from our recruitment experts and take the first step towards your UK employment success.
+                      </p>
+                      
+                      <Button 
+                        className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-10 py-4 rounded-full text-xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border-2 border-primary/20 group"
+                        onClick={() => {
+                          closeModal();
+                          window.location.href = '/contact';
+                        }}
+                      >
+                        <span className="mr-2 text-xl">🎯</span>
+                        Get Expert Consultation
+                        <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform duration-300" />
+                      </Button>
+                      
+                      {/* Trust indicators */}
+                      <div className="mt-6 flex flex-wrap justify-center items-center gap-4 text-sm text-gray-500">
+                        <div className="flex items-center gap-1">
+                          <span className="text-green-500">✓</span>
+                          <span>Free Consultation</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <span className="text-green-500">✓</span>
+                          <span>Expert Guidance</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <span className="text-green-500">✓</span>
+                          <span>96% Success Rate</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -776,23 +806,54 @@ export default function Blog() {
       )}
 
       {/* CTA Section */}
-      <section className="gradient-bg text-white py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+      <section className="gradient-bg text-white py-20 relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-10 left-10 w-16 h-16 bg-white/10 rounded-full animate-float"></div>
+          <div className="absolute top-32 right-20 w-12 h-12 bg-accent/20 rounded-full animate-float-delayed"></div>
+          <div className="absolute bottom-20 left-1/4 w-8 h-8 bg-white/15 rounded-full animate-float-slow"></div>
+          <div className="absolute top-1/2 right-10 w-6 h-6 bg-accent/30 rounded-full animate-float"></div>
+        </div>
+        
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-8 animate-fade-in">
             Ready to Start Your UK Career Journey?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl lg:text-2xl text-blue-100 mb-12 animate-slide-up max-w-3xl mx-auto leading-relaxed">
             Get personalized guidance from our recruitment experts and take the first step towards your UK employment success.
           </p>
-          <Button 
-            className="bg-accent text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-400 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
-            onClick={() => window.location.href = '/contact'}
-          >
-            Get Expert Consultation
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          
+          {/* Enhanced CTA Button */}
+          <div className="animate-slide-up">
+            <Button 
+              className="bg-accent text-primary px-12 py-6 rounded-full text-xl font-bold hover:bg-yellow-400 transition-all duration-300 transform hover:scale-110 shadow-2xl hover:shadow-3xl border-4 border-accent/20 hover:border-yellow-400/30 backdrop-blur-sm group"
+              onClick={() => window.location.href = '/contact'}
+            >
+              <span className="mr-3 text-2xl">🚀</span>
+              Get Expert Consultation
+              <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform duration-300" />
+            </Button>
+            
+            {/* Additional trust indicators */}
+            <div className="mt-8 flex flex-wrap justify-center items-center gap-6 text-blue-100">
+              <div className="flex items-center gap-2">
+                <span className="text-accent">✓</span>
+                <span>Free Consultation</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-accent">✓</span>
+                <span>Expert Guidance</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-accent">✓</span>
+                <span>Proven Success</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 }
