@@ -321,6 +321,93 @@ export default function HealthSector() {
           </div>
         </section>
 
+        {/* ORE Preparation */}
+        <section className="py-20 bg-gradient-to-br from-green-50 to-emerald-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Overseas Registration Examination (ORE)</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Specialist examination for overseas-qualified dentists seeking UK registration.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="bg-white rounded-2xl shadow-xl p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-6">ORE for Dentists</h3>
+                  <p className="text-gray-700 mb-6">
+                    Dentists preparing for the ORE focus on demonstrating both academic knowledge and practical dental skills at a high standard. Preparation typically involves strengthening applied dental science, revising clinical dentistry across all specialties, and developing practical skills for patient care, treatment planning, and dental procedures.
+                  </p>
+                  <p className="text-gray-700 mb-6">
+                    The ORE also assesses professional standards, ethical judgement, and the ability to respond effectively to medical emergencies in a clinical setting.
+                  </p>
+                  
+                  <div className="bg-green-50 border-l-4 border-green-400 p-6 rounded-r-lg">
+                    <h4 className="font-bold text-gray-900 mb-3">Why take the ORE?</h4>
+                    <p className="text-gray-700 text-sm">
+                      The ORE is essential for dentists whose qualifications are not automatically recognised by the General Dental Council (GDC). Passing the exam allows them to apply for full registration and practise dentistry legally in the UK. It is designed to confirm that overseas dentists have the same level of knowledge, skills, and competence as graduates from UK dental schools.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-6">How difficult is the ORE?</h3>
+                  <p className="text-gray-700 mb-6">
+                    The ORE is a challenging two-part assessment:
+                  </p>
+                  <div className="space-y-4 mb-6">
+                    <div className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                      <div>
+                        <strong className="text-gray-900">Part 1:</strong> Tests applied dental science and clinical knowledge through written exams
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                      <div>
+                        <strong className="text-gray-900">Part 2:</strong> Examines practical ability through manikin exercises, OSCEs, and treatment planning
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-gray-700 text-sm">
+                    Success requires not only strong theoretical knowledge but also excellent clinical skills and familiarity with UK standards of practice. While demanding, it is achievable with focused preparation, structured revision, and practice in both written and hands-on tasks.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+              <div className="bg-white rounded-2xl shadow-lg p-8">
+                <h4 className="font-bold text-gray-900 mb-4">Fees and Charges</h4>
+                <p className="text-gray-700 text-sm">
+                  Fees and charges are very competitive when matched with the international market price for the same level of courses. The fees are calculated based on the assessments made upon candidate's registration and vary accordingly learning requirements.
+                </p>
+              </div>
+
+              <div className="bg-yellow-50 rounded-2xl border-2 border-yellow-200 p-8">
+                <h4 className="font-bold text-gray-900 mb-4">Disclaimer</h4>
+                <p className="text-gray-700 text-sm">
+                  Oyster Worldwide Employment & Learning Services is an independent company, provide help and assistance to all candidates with dental registration requirements and others who require assistance registering with GDC, UK. We are not affiliated with any Registration or Dental Regularity Body in the United Kingdom.
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <a 
+                href="https://www.gdc-uk.org/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-8 py-4 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+              >
+                <BookOpen className="mr-2 h-5 w-5" />
+                Learn More
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Language Requirements */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
